@@ -19,6 +19,9 @@ module.exports = {
         name: `blog`,
       },
     },
+    
+      `gatsby-plugin-sass`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
