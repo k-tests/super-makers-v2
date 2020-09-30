@@ -1,22 +1,21 @@
 import React from "react"
-import TopNav from './topnav'
-import Footer from './footer'
-import './custom.scss'
+import TopNav from "./Topnav"
+import Footer from "./Footer"
+import "./custom.scss"
 
 import { Link } from "gatsby"
-import {Container, Col, Row, Navbar, Nav} from 'react-bootstrap'
-import { withPrefix } from 'gatsby'
+import { Container, Col, Row, Navbar, Nav } from "react-bootstrap"
+import { withPrefix } from "gatsby"
 
 const Layout = ({ children }) => {
   return (
+    <div>
+      <TopNav />
+      {/* <header className="">{header}</header>  */}
 
-<div>
-     <TopNav/>
-  {/* <header className="">{header}</header>  */}
-     
       <div>{children}</div>
-       <Footer/>
-       </div>
+      <Footer />
+    </div>
   )
 }
 export default Layout
@@ -44,11 +43,11 @@ export default Layout
 //     // <div className="" data-is-root-path={isRootPath}>
 // <>
 //       <TopNav/>
-//  <header className="">{header}</header> 
-     
+//  <header className="">{header}</header>
+
 //       <main>{children}</main>
 //       <Footer/>
-    
+
 //     </>
 //   )
 // }

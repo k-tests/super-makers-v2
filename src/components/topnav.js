@@ -5,7 +5,10 @@ import { Container, Col, Row, Navbar, Nav } from "react-bootstrap"
 const TopNav = () => {
   return (
     <nav className="">
-      <Navbar className="dark-blue-bg dark-blue-typo fixed-top" expand="lg">
+      <Navbar
+        className="py-3 dark-blue-bg dark-blue-typo fixed-top"
+        expand="lg"
+      >
         <Link to="/">Super Makers</Link>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">

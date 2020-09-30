@@ -1,38 +1,42 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import IntroSupport from "../components/introSupport"
-import BuildWorlds from "../components/buildWorlds"
-import CrossWorlds from "../components/crossWorlds"
-import Features from "../components/features"
-import HowItWorks from "../components/howItWorks"
-import Volunteer from "../components/volunteer"
-import Seriously from "../components/seriously"
-import Milestones from "../components/milestones"
+import IntroSupport from "../components/IntroSupport"
+import BuildWorlds from "../components/BuildWorlds"
+import CrossWorlds from "../components/CrossWorlds"
+import Features from "../components/Features"
+import HowItWorks from "../components/HowItWorks"
+import Volunteer from "../components/Volunteer"
+import Seriously from "../components/Seriously"
+import Milestones from "../components/Milestones"
+import Endorsement from "../components/Endorsement"
+import IntroVideo from "../components/IntroVideo"
+import TopNavFiller from "../components/TopNavFiller"
 
-import IntroVideo from "../components/introVideo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Endorsement from "../components/endorsement"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const siteTitle = data.siteMetaData.siteMetadata?.title || `Title`
+  const buildWorld = data.buildWorld.nodes
+  const crossWorld = data.crossWorld.nodes
+
+  // const buildWorlds = posts.contains("Build World")
 
   return (
     <Layout>
       <section>
         {/* <Layout location={location} title={siteTitle}> */}
         <SEO title="All posts" />
+        <TopNavFiller />
         <IntroVideo
         // head={posts[1].frontmatter.title}
         // video={posts[2].frontmatter.date}
         // bottomText={posts[1].frontmatter.description}
         // theHtml={{ __html: posts[1].html }}
         />
-
         <IntroSupport />
-        <BuildWorlds />
-        <CrossWorlds />
+        <BuildWorlds theHtml={{ __html: buildWorld[0].html }} />
+        <CrossWorlds theHtml={{ __html: crossWorld[0].html }} />
         <Features />
         <HowItWorks />
         <Volunteer />
@@ -96,12 +100,30 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query {
-    site {
+    siteMetaData: site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    buildWorld: allMarkdownRemark(
+      filter: { frontmatter: { title: { eq: "Build Worlds" } } } # sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        excerpt
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+    crossWorld: allMarkdownRemark(
+      filter: { frontmatter: { title: { eq: "Cross Worlds" } } } # sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       nodes {
         excerpt
         html
@@ -117,3 +139,20 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// buildWorld: allMarkdownRemark(
+//   filter: { frontmatter: { title: { eq: "Build Worlds" } } } # sort: { fields: [frontmatter___date], order: DESC }
+// ) {
+//   nodes {
+//     excerpt
+//     html
+//     fields {
+//       slug
+//     }
+//     frontmatter {
+//       date(formatString: "MMMM DD, YYYY")
+//       title
+//       description
+//     }
+//   }
+// }

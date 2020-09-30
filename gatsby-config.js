@@ -19,9 +19,9 @@ module.exports = {
         name: `blog`,
       },
     },
-    
-      `gatsby-plugin-sass`,
-    
+
+    `gatsby-plugin-sass`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,6 +37,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
+              linkImagesToOriginal: false,
+              backgroundColor: `transparent`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-image-attributes`,
+            options: {
+              styleAttributes: [`width`, `align-items`, `justify-content`],
             },
           },
           {
@@ -63,13 +71,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Super Makers`,
+        short_name: `ShperMakers`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
