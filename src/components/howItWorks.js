@@ -1,8 +1,10 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { Player, ControlBar } from "video-react"
-import myVid from "../assets/images/opening_14_2-1.mp4"
-import vidPoster from "../assets/images/games.png"
+import myVid from "../assets/images/supermakers-work.mp4"
+import howVideoFillerGif from "../assets/images/how-video-filler.gif"
+
+// import vidPoster from "../assets/images/games.png"
 
 const HowItWorks = () => {
   return (
@@ -16,7 +18,7 @@ const HowItWorks = () => {
           <div className="yellow-bg text-left">
             <Player
               playsInline
-              poster={vidPoster}
+              poster={howVideoFillerGif}
               src={myVid}
               height={500}
               fluid={false}

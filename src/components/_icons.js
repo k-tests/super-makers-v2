@@ -16,6 +16,8 @@ import comingSoonCarIcon from "../assets/images/cs-car.svg"
 import comingSoonHomeIcon from "../assets/images/cs-home.svg"
 import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 
+import eyesIcon from "../assets/images/eyes.svg"
+
 import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
 
@@ -28,6 +30,11 @@ import shareIcon from "../assets/images/share-icon.svg"
 // GIfs
 import swipeGif from "../assets/images/screen-gif.gif"
 import earthGif from "../assets/images/earth.gif"
+import volunteerGif from "../assets/images/volunteer.gif"
+import nosePressGif from "../assets/images/nose-press.gif"
+import volunteersGif from "../assets/images/volunteers-rl.gif"
+import howVideoFillerGif from "../assets/images/how-video-filler.gif"
+
 
 // Social
 export const InstaIcon = props => {
@@ -277,3 +284,63 @@ export const EarthGif = props => {
     />
   )
 }
+
+
+export const VolunteerGif = props => {
+  return (
+    <img
+      src={volunteerGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const NosePressGif = props => {
+  return (
+    <img
+      src={nosePressGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+
+export const VolunteersGif = props => {
+  return (
+    <img
+      src={volunteersGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const HowVideoFillerGif = props => {
+  return (
+    <img
+      src={howVideoFillerGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const EyesIcon = props => {
+  return (
+    <img
+      src={eyesIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+
+
