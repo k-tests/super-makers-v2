@@ -17,6 +17,8 @@ import comingSoonHomeIcon from "../assets/images/cs-home.svg"
 import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 
 import eyesIcon from "../assets/images/eyes.svg"
+import fundingDiagram from "../assets/images/diagram.svg"
+
 
 import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
@@ -342,5 +344,15 @@ export const EyesIcon = props => {
   )
 }
 
+export const FundingDiagram = props => {
+  return (
+    <img
+      src={fundingDiagram}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
 
 
