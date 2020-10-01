@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import {
   CrossIcon,
   PhoneMillIcon,
-} from "./icons"
+} from "./_icons"
 
 const CrossWorlds = props => {
   return (

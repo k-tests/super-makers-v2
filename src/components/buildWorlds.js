@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { EarthGif } from "./icons"
+import { EarthGif } from "./_icons"
 
 const BuildWorlds = props => {
   return (

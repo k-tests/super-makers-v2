@@ -7,7 +7,7 @@ import vidPoster from "../assets/images/games-2.png"
 import {
   WindIcon,
   LineIconsIcon,
-} from "./icons"
+} from "./_icons"
 
 const IntroVideo = props => {
   return (

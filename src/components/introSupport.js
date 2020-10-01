@@ -6,7 +6,7 @@ import {
   ShareBtn,
   TwitterIcon,
   LightningIcon,
-} from "./icons"
+} from "./_icons"
 
 const IntroSupport = () => {
   return (
