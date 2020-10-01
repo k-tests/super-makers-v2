@@ -27,6 +27,7 @@ import shareIcon from "../assets/images/share-icon.svg"
 
 // GIfs
 import swipeGif from "../assets/images/screen-gif.gif"
+import earthGif from "../assets/images/earth.gif"
 
 // Social
 export const InstaIcon = props => {
@@ -262,6 +263,17 @@ export const PhoneMillIcon = props => {
         right: 0,
         margin: "auto",
       }}
+    />
+  )
+}
+
+export const EarthGif = props => {
+  return (
+    <img
+      src={earthGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
     />
   )
 }

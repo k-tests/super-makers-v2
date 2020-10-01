@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { HelloIcon, BuildWorldsRightImg, SwipeGif } from "./Icons"
+import { HelloIcon, BuildWorldsRightImg, SwipeGif, EarthGif } from "./Icons"
 
 const BuildWorlds = props => {
   return (
@@ -9,7 +9,8 @@ const BuildWorlds = props => {
       <Row className="">
         <Col xs={12} md={6} className="green-bg green-typo p-5 text-center">
           <h1 className="text-left">Build Sustainable Worlds!</h1>
-          <HelloIcon width="70%" class="py-5" />
+          {/* <HelloIcon width="70%" class="py-5" /> */}
+          <EarthGif width="90%" class="py-5" />
         </Col>
         <Col xs={12} md={6} className="dark-blue-bg dark-blue-typo p-5">
           <h3 dangerouslySetInnerHTML={props.theHtml} className="text-left" />
