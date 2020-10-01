@@ -1,15 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import { Player, ControlBar } from "video-react"
 import myVid from "../assets/images/opening_14_2-1.mp4"
 import vidPoster from "../assets/images/games-2.png"
 import {
-  HomeIcon,
-  PushNoseIcon,
-  ComingSoonSchoolIcon,
-  ComingSoonHomeIcon,
-  ComingSoonCarIcon,
   WindIcon,
   LineIconsIcon,
 } from "./icons"

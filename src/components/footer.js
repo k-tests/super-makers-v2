@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { Container, Row, Col } from "react-bootstrap"
 
 const Footer = () => {

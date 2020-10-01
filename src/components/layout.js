@@ -3,9 +3,8 @@ import TopNav from "./topnav"
 import Footer from "./footer"
 import "./custom.scss"
 
-import { Link } from "gatsby"
-import { Container, Col, Row, Navbar, Nav } from "react-bootstrap"
-import { withPrefix } from "gatsby"
+// import { Link } from "gatsby"
+// import { withPrefix } from "gatsby"
 
 const Layout = ({ children }) => {
   return (

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 import { Player, ControlBar } from "video-react"
 import myVid from "../assets/images/opening_14_2-1.mp4"

@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { HelloIcon, BuildWorldsRightImg, SwipeGif, EarthGif } from "./icons"
+import { EarthGif } from "./icons"
 
 const BuildWorlds = props => {
   return (

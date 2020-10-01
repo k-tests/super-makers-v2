@@ -1,13 +1,9 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
 // import SmSliderButton from "./SmSliderButton"
 import {
   ShareBtn,
-  ShareIcon,
-  FacebookIcon,
-  InstaIcon,
   TwitterIcon,
   LightningIcon,
 } from "./icons"
@@ -54,7 +50,7 @@ const IntroSupport = () => {
 
 export default IntroSupport
 
-{
+
   /* <Row className="text-center">
         <Col xs={12} className="">
           <h2>Become a renewable energy industry partner!</h2>
@@ -82,4 +78,4 @@ export default IntroSupport
           </Row>
         </Col>
       </Row> */
-}
+

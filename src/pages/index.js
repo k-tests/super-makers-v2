@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import IntroSupport from "../components/introSupport"
 import BuildWorlds from "../components/buildWorlds"
 import CrossWorlds from "../components/crossWorlds"
@@ -10,8 +10,7 @@ import Seriously from "../components/seriously"
 import Milestones from "../components/milestones"
 import Endorsement from "../components/endorsement"
 import IntroVideo from "../components/introVideo"
-import TopNavFiller from "../components/topNavFiller"
-
+import TopNavFiller from "../components/topnavFiller"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -25,7 +24,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout>
       <section>
         {/* <Layout location={location} title={siteTitle}> */}
-        <SEO title="All posts" />
+        <SEO title={`Home | ${siteTitle}`} />
         <TopNavFiller />
         <IntroVideo
         // head={posts[1].frontmatter.title}

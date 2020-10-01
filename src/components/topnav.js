@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Col, Row, Navbar, Nav } from "react-bootstrap"
+import {  Navbar } from "react-bootstrap"
 
 const TopNav = () => {
   return (

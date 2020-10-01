@@ -1,7 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { VrIcon } from "./icons"
 
 const Features = props => {
   return (
@@ -11,10 +9,8 @@ const Features = props => {
       {props.features.map(features => 
 
         <FeaturesItem
-          // title={features.frontmatter.title}
           title={features.frontmatter.title}
         >
-          {/* <VrIcon /> */}
           <div dangerouslySetInnerHTML={{ __html: features.html }} />
         </FeaturesItem>
        ) }
