@@ -3,6 +3,12 @@ import React from "react"
 import helloIcon from "../assets/images/hello.svg"
 import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
+import lightningIcon from "../assets/images/lightning.svg"
+
+import windIcon from "../assets/images/wind-line.svg"
+import lineIconsIcon from "../assets/images/icon-line.svg"
+import shareBtn from "../assets/images/share-btn.svg"
+import phoneMillIcon from "../assets/images/phone-mill.svg"
 
 import homeIcon from "../assets/images/home.svg"
 import pushNoseIcon from "../assets/images/push-nose.svg"
@@ -17,6 +23,10 @@ import instaIcon from "../assets/images/instagram.svg"
 import facebookIcon from "../assets/images/facebook.svg"
 import linkedinIcon from "../assets/images/linkedin.svg"
 import twitterIcon from "../assets/images/twitter.svg"
+import shareIcon from "../assets/images/share-icon.svg"
+
+// GIfs
+import swipeGif from "../assets/images/screen-gif.gif"
 
 // Social
 export const InstaIcon = props => {
@@ -165,6 +175,93 @@ export const VrIcon = props => {
       alt="Hello Icon"
       className={`${props.class}`}
       style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const WindIcon = props => {
+  return (
+    <img
+      src={windIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", maxWidth: props.maxWidth }}
+    />
+  )
+}
+
+export const LineIconsIcon = props => {
+  return (
+    <img
+      src={lineIconsIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const ShareBtn = props => {
+  return (
+    <img
+      src={shareBtn}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const ShareIcon = props => {
+  return (
+    <img
+      src={shareIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const LightningIcon = props => {
+  return (
+    <img
+      src={lightningIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const SwipeGif = props => {
+  return (
+    <img
+      src={swipeGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const PhoneMillIcon = props => {
+  return (
+    <img
+      src={phoneMillIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: "auto",
+        maxHeight: "50%",
+        maxWidth: "50%",
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        margin: "auto",
+      }}
     />
   )
 }

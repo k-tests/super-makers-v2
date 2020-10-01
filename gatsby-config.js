@@ -44,7 +44,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-image-attributes`,
             options: {
-              styleAttributes: [`width`, `align-items`, `justify-content`],
+              styleAttributes: [
+                `width`,
+                `margin-left`,
+                `margin-right`,
+                `display`,
+                `margin-top`,
+                `margin-bottom`,
+              ],
             },
           },
           {

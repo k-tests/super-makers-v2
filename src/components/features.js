@@ -59,8 +59,8 @@ export const FeaturesItem = props => {
           <br />
           {props.children}
         </Col>
-        <Col xs={12} lg={{ span: 8, offset: 2 }} className="mt-3">
-          <p className="text-lef mt-3">{props.content}</p>
+        <Col xs={12} lg={{ span: 8, offset: 2 }} className="text-left mt-3">
+          <p className=" mt-3">{props.content}</p>
         </Col>
       </Row>
     </Col>
