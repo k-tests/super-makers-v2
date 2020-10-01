@@ -5,5 +5,3 @@ description: Cross
 ---
 
 Test Cross Worlds
-
-#### Header 1

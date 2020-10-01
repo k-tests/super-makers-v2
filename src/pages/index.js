@@ -19,9 +19,8 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.siteMetaData.siteMetadata?.title || `Title`
   const buildWorld = data.buildWorld.nodes
   const crossWorld = data.crossWorld.nodes
-
+  const features = data.features.nodes
   // const buildWorlds = posts.contains("Build World")
-
   return (
     <Layout>
       <section>
@@ -37,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
         <IntroSupport />
         <BuildWorlds theHtml={{ __html: buildWorld[0].html }} />
         <CrossWorlds theHtml={{ __html: crossWorld[0].html }} />
-        <Features />
+        <Features features={features}/>
         <HowItWorks />
         <Volunteer />
         <Seriously />
@@ -123,6 +122,22 @@ export const pageQuery = graphql`
     }
     crossWorld: allMarkdownRemark(
       filter: { frontmatter: { title: { eq: "Cross Worlds" } } } # sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        excerpt
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+    features: allMarkdownRemark(
+      filter: { frontmatter: { description: {regex: "/\\bfeature\\b/i"}} }  sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {
         excerpt
