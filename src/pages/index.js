@@ -10,7 +10,7 @@ import Seriously from "../components/seriously"
 import Milestones from "../components/milestones"
 import Endorsement from "../components/endorsement"
 import IntroVideo from "../components/introVideo"
-import TopNavFiller from "../components/topnavFiller"
+import TopNavFiller from "../components/_topNavFiller"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
