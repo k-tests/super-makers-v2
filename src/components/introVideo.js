@@ -12,7 +12,7 @@ import {
   ComingSoonCarIcon,
   WindIcon,
   LineIconsIcon,
-} from "./Icons"
+} from "./icons"
 
 const IntroVideo = props => {
   return (
