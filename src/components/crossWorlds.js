@@ -6,7 +6,7 @@ import {
   BuildWorldsLefttImg,
   CrossIcon,
   PhoneMillIcon,
-} from "./Icons"
+} from "./icons"
 
 const CrossWorlds = props => {
   return (

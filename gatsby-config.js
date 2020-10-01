@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Super Makers`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Unit Lab & Koby`,
+      summary: `Series of projects and games`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Build Sustinable Worlds`,
+    siteUrl: `https://super-makers-dev.netlify.app`,
     social: {
       twitter: `kylemathews`,
     },

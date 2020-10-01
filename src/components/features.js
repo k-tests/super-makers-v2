@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { VrIcon } from "./Icons"
+import { VrIcon } from "./icons"
 
 const Features = props => {
   return (

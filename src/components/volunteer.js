@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { PushNoseIcon } from "./Icons"
+import { PushNoseIcon } from "./icons"
 
 const Volunteer = () => {
   return (

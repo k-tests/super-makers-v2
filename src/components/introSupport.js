@@ -10,7 +10,7 @@ import {
   InstaIcon,
   TwitterIcon,
   LightningIcon,
-} from "./Icons"
+} from "./icons"
 
 const IntroSupport = () => {
   return (

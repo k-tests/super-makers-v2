@@ -1,6 +1,6 @@
 import React from "react"
-import TopNav from "./Topnav"
-import Footer from "./Footer"
+import TopNav from "./topnav"
+import Footer from "./footer"
 import "./custom.scss"
 
 import { Link } from "gatsby"
