@@ -19,6 +19,10 @@ import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 import eyesIcon from "../assets/images/eyes.svg"
 import fundingDiagram from "../assets/images/diagram.svg"
 
+import winterIcon from "../assets/images/winter.svg"
+import springIcon from "../assets/images/spring.svg"
+import summerIcon from "../assets/images/sun.svg"
+
 import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
 
@@ -35,6 +39,8 @@ import volunteerGif from "../assets/images/volunteer.gif"
 import nosePressGif from "../assets/images/nose-press.gif"
 import volunteersGif from "../assets/images/volunteers-rl.gif"
 import howVideoFillerGif from "../assets/images/how-video-filler.gif"
+import vrAnimGif from "../assets/images/vr-anim.gif"
+import phoneRpmGif from "../assets/images/vr-phone-2.gif"
 
 // Social
 export const InstaIcon = props => {
@@ -212,6 +218,38 @@ export const LineIconsIcon = props => {
   )
 }
 
+export const WinterIcon = props => {
+  return (
+    <img
+      src={winterIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
+export const SpringIcon = props => {
+  return (
+    <img
+      src={springIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+export const SummerIcon = props => {
+  return (
+    <img
+      src={summerIcon}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
 export const ShareBtn = props => {
   return (
     <img
@@ -279,6 +317,26 @@ export const PhoneMillIcon = props => {
     />
   )
 }
+export const PhoneRpmGif = props => {
+  return (
+    <img
+      src={phoneRpmGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: "auto",
+        maxHeight: "50%",
+        maxWidth: "50%",
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        margin: "auto",
+      }}
+    />
+  )
+}
 
 export const EarthGif = props => {
   return (
@@ -295,6 +353,16 @@ export const VolunteerGif = props => {
   return (
     <img
       src={volunteerGif}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+export const VrAnimGif = props => {
+  return (
+    <img
+      src={vrAnimGif}
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{ height: "auto", width: props.width }}

@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { CrossIcon, PhoneMillIcon } from "./_icons"
+import { VrAnimGif, CrossIcon, PhoneMillIcon, PhoneRpmGif } from "./_icons"
 
 const CrossWorlds = props => {
   return (
@@ -10,7 +10,7 @@ const CrossWorlds = props => {
           <h1 className="text-left">
             Cross between virtual and physical worlds
           </h1>
-          <CrossIcon width="70%" class="py-5" />
+          <VrAnimGif width="90%" class="py-5" />
           {/* <h3 className="mt-3 text-left">
             We are using VR and computer vision to kids into Making.
           </h3> */}
@@ -27,8 +27,10 @@ const CrossWorlds = props => {
           md={6}
           className="dark-blue-bg dark-blue-typo p-6 cross-backround"
         >
-          <PhoneMillIcon width="30%" class="mx-auto  d-block" />
-          <h3 dangerouslySetInnerHTML={props.theHtml} className="text-left" />
+          <PhoneRpmGif height="60%" class="mx-auto  d-block" />
+
+          {/* <PhoneRpmGif width="30%" class="mx-auto  d-block" /> */}
+          {/* <h3 dangerouslySetInnerHTML={props.theHtml} className="text-left" /> */}
         </Col>
       </Row>
     </Container>

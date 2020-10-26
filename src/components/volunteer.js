@@ -11,20 +11,19 @@ const Volunteer = () => {
   return (
     <Container fluid className="dark-blue-bg dark-blue-typo p-4">
       <Row className="">
-        <Col xs={6} className="p-6">
-          <VolunteerGif width="250px" />
-          <h3>Test it Out!</h3>
+        <Col xs={4} className="p-6">
+          <h1>Test it Out!</h1>
+          <NosePressGif width="300px" />
         </Col>
-        <Col xs={6} className="p-6">
-          <Row>
-            <Col xs={6} md={6}>
-              <VolunteersGif width="300px" />
-              <NosePressGif width="300px" />
-            </Col>
-            <Col xs={6} md={6}>
-              Would you like to be an early tester? Get in touch!
-            </Col>
-          </Row>
+        <Col xs={4} className="p-6">
+          <h3>Would you like to be an early tester?</h3>
+          <br />
+          <VolunteerGif width="250px" />
+        </Col>
+        <Col xs={4} className="p-6">
+          <h3>Get in touch!</h3>
+          <br />
+          <VolunteersGif width="300px" />
         </Col>
       </Row>
     </Container>
