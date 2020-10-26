@@ -1,31 +1,29 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { Player, ControlBar } from "video-react"
-import myVid from "../assets/images/supermakers-work.mp4"
+import myVid from "../assets/images/opening_14_2-1.mp4"
 import howVideoFillerGif from "../assets/images/how-video-filler.gif"
 
 // import vidPoster from "../assets/images/games.png"
 
 const HowItWorks = () => {
   return (
-    <Container fluid className="yellow-bg yellow-typo mt-5 section">
+    <Container fluid className="yellow-bg yellow-typo section">
       <Row className="mb-4">
-        <Col xs={12} md={4} className="text-left ">
+        <Col xs={12} sm={12} md={12} lg={4} xl={3} className="text-left p-6">
           <h1 className="mb-4 ">How it works?</h1>
+          <h3 className="pt-4">See how the journey looks like...</h3>
         </Col>
 
-        <Col xs={12} md={8} className="">
+        <Col xs={12} sm={12} md={12} lg={8} xl={9} className="p-6">
           <div className="yellow-bg text-left">
-            <Player
-              playsInline
+            <video
+              controls
+              controlsList="nodownload"
+              width="100%"
               poster={howVideoFillerGif}
-              src={myVid}
-              height={500}
-              fluid={false}
-              aspectRatio="16:9"
             >
-              <ControlBar autoHide={true}></ControlBar>
-            </Player>
+              <source src={myVid} type="video/mp4" />
+            </video>
           </div>
         </Col>
       </Row>

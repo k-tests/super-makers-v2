@@ -7,12 +7,36 @@
   font-style: normal;
   font-weight: 300;
   src: url("../assets/fonts/ApercuRegular.eot");
-  src: local("Open Sans"), local("OpenSans"),
+  src: local("ApercuRegular"),
     url("../assets/fonts/ApercuRegular.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/ApercuRegular.woff2") format("woff2"),
     url("../assets/fonts/ApercuRegular.woff") format("woff"),
     url("../assets/fonts/ApercuRegular.ttf") format("truetype"),
     url("../assets/fonts/ApercuRegular.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/ApercuMedium.eot");
+  src: local("ApercuMedium"),
+    url("../assets/fonts/ApercuMedium.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/ApercuMedium.woff2") format("woff2"),
+    url("../assets/fonts/ApercuMedium.woff") format("woff"),
+    url("../assets/fonts/ApercuMedium.ttf") format("truetype"),
+    url("../assets/fonts/ApercuMedium.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: "Apercu";
+  font-style: bold;
+  font-weight: 500;
+  src: url("../assets/fonts/ApercuBold.eot");
+  src: local("ApercuBold"),
+    url("../assets/fonts/ApercuBold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/ApercuBold.woff2") format("woff2"),
+    url("../assets/fonts/ApercuBold.woff") format("woff"),
+    url("../assets/fonts/ApercuBold.ttf") format("truetype"),
+    url("../assets/fonts/ApercuBold.svg#OpenSans") format("svg");
 }
 
 // *** Colors *** //
@@ -66,8 +90,8 @@ $line-letter-base: 0.035rem !default;
 $h1-font-size: $font-size-base * 4 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1 !default;
+$h4-font-size: $font-size-base * 1.35 !default;
+$h5-font-size: $font-size-base * 1.2 !default;
 $h6-font-size: $font-size-base * 0.9 !default;
 $h7-font-size: $font-size-base * 0.75 !default;
 
@@ -97,9 +121,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
   letter-spacing: $line-letter-base * 2;
-  line-height: $line-height-base * 0.9;
+  // line-height: $line-height-base * 0.9;
+  line-height: $line-height-base * 0.8;
+}
+h1 {
+  font-weight: 500;
 }
 
 h4 {
@@ -108,8 +135,13 @@ h4 {
 }
 h3 {
   font-weight: 300 !important;
-  line-height: $line-height-base * 1;
-  letter-spacing: $line-letter-base * 3;
+  line-height: $line-height-base * 0.9;
+  letter-spacing: $line-letter-base * 2;
+}
+h2 {
+  font-weight: 500 !important;
+  line-height: $line-height-base * 0.9;
+  letter-spacing: $line-letter-base * 2;
 }
 
 p,
@@ -132,6 +164,17 @@ p,
   font-weight: 700;
   letter-spacing: $line-letter-base * 4;
 }
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.light {
+  font-weight: $font-weight-light;
+}
+.medium {
+  font-weight: $font-weight-normal;
+}
+
 .navbar a {
   font-size: $font-size-base * 1.1;
 }
@@ -148,11 +191,11 @@ body {
   background-color: $yellow;
 }
 
-// section {
-//   margin-top: 3rem;
-// }
-section .col {
-  // padding: 0px 50px;
+.p-6 {
+  padding: 4.5rem !important;
+}
+.px-6 {
+  padding: 0rem 4.5rem !important;
 }
 
 .container-fluid {
@@ -179,23 +222,31 @@ section .col {
 .disabled-link:hover {
   color: inherit !important;
 }
-
-// Video
-// iframe {
-//   width: 100%;
-//   height: 580px;
+//  VIDEO
+// .video-react {
+//   background-color: transparent !important;
+//   max-height: auto !important;
+//   width: 100% !important;
+//   font-family: $font-family-sans-serif;
 // }
-.video-react {
-  background-color: transparent !important;
-  max-height: auto !important;
-  width: 100% !important;
-  font-family: $font-family-sans-serif;
+// .video-react .video-react-poster {
+//   background-color: transparent !important;
+// }
+// .video-react-control-bar .video-react-control-bar-auto-hide {
+//   transition: visibility 0.1s, opacity 0.1s !important;
+// }
+
+video:focus {
+  outline-width: 0 !important;
 }
-.video-react .video-react-poster {
-  background-color: transparent !important;
+video::-webkit-media-controls-panel {
+  -webkit-appearance: none;
+  // opacity: 0.5 !important;
+  // background-color: red !important;
 }
-.video-react-control-bar .video-react-control-bar-auto-hide {
-  transition: visibility 0.1s, opacity 0.1s !important;
+
+video::-webkit-media-controls-play-button {
+  // background-color: $blue !important;
 }
 // Loading
 .img-placeholder-x {
@@ -625,24 +676,61 @@ button:focus {
 //   display:table-caption;
 //   line-height: $line-height-base;
 // }
+.support-btn {
+  margin-bottom: 0rem !important;
+}
 
 // *** MEDIA QUERIES *** //
 
 // --- Extra small devices (portrait phones, less than 576px) --- //
 @media (max-width: 575.98px) {
+  .support-btn {
+    margin-bottom: 3rem !important;
+  }
+  .support h3 {
+    font-size: $h4-font-size !important;
+  }
 }
 // --- Small devices (landscape phones, 576px and up) --- //
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .support-btn {
+    margin-bottom: 3rem !important;
+  }
+  .support h3 {
+    font-size: $h4-font-size !important;
+  }
 }
 // --- Medium devices (tablets, 768px and up) --- //
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .support h3 {
+    font-size: $h5-font-size !important;
+  }
+  .worlds h1 {
+    font-size: $font-size-base * 3.2 !important;
+  }
+  .worlds h3 {
+    font-size: $font-size-base * 1.2 !important;
+  }
 }
 // --- Large devices (desktops, 992px and up) --- //
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .support h4 {
-    font-size: $h6-font-size;
+  .support h3 {
+    font-size: $h4-font-size !important;
+  }
+  .features h3 {
+    font-size: $h4-font-size !important;
+  }
+  h1 {
+    font-size: $font-size-base * 3.5 !important;
+  }
+  h3 {
+    font-size: $font-size-base * 1.5 !important;
   }
 }
 // --- Extra large devices (large desktops, 1200px and up) --- //
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1299.98px) {
+}
+
+// --- Super large devices (large desktops, 1200px and up) --- //
+@media (min-width: 1300px) {
 }

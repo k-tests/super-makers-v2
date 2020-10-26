@@ -1,55 +1,47 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { Player, ControlBar } from "video-react"
+
 import myVid from "../assets/images/opening_14_2-1.mp4"
+
 import vidPoster from "../assets/images/games-2.png"
-import {
-  WindIcon,
-  LineIconsIcon,
-} from "./_icons"
+import { WindIcon, LineIconsIcon } from "./_icons"
 
 const IntroVideo = props => {
   return (
-    <Container fluid className="yellow-bg yellow-typo mt-5 section">
+    <Container fluid className="yellow-bg yellow-typo mt-5 section ">
       <Row className="mb-4">
-        <Col xs={12} md={4} className="text-left ">
-          <h1 className="mb-4 ">Welcome to Super Makers!</h1>
-          <WindIcon class="my-4" maxWidth="90%" />
+        <Col xs={12} sm={12} md={12} lg={4} xl={3} className="text-left px-6">
+          <h3>Welcome to:</h3>
 
-          <h3 className="py-4">
+          <h1 className="mb-4">Super Makers!</h1>
+          <WindIcon class="my-4" maxWidth="90%" />
+          <h3 className="pt-4">
             A series of projects and games dedicated to renewable energies.
             <br />
-            <Link to="/">Coming soon!</Link>
+            <br />
+            {/* <Link to="/" className="orange">
+              Coming soon!
+            </Link> */}
           </h3>
         </Col>
 
-        <Col xs={12} md={8} className="">
+        <Col xs={12} sm={12} md={12} lg={8} xl={9} className="px-6">
           <div className="yellow-bg text-left">
-            <Player
-              playsInline
+            <video
+              controls
+              controlsList="nodownload"
+              width="100%"
               poster={vidPoster}
-              src={myVid}
-              height={500}
-              fluid={false}
-              aspectRatio="16:9"
             >
-              <ControlBar autoHide={true}></ControlBar>
-            </Player>
+              <source src={myVid} type="video/mp4" />
+            </video>
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12} className="py-4">
+      <Row className="">
+        <Col xs={12} className="my-5 px-6">
           <LineIconsIcon width="100%" />
-          {/* <div className="w-100 d-flex flex-nowrap justify-content-between align-items-center">
-            <ComingSoonSchoolIcon width="45px" />
-            <ComingSoonCarIcon width="50px" />
-            <ComingSoonHomeIcon width="50px" />
-            <ComingSoonSchoolIcon width="45px" />
-            <ComingSoonCarIcon width="50px" />
-            <ComingSoonHomeIcon width="50px" />
-          </div> */}
         </Col>
       </Row>
     </Container>
@@ -57,6 +49,3 @@ const IntroVideo = props => {
 }
 
 export default IntroVideo
-/* {props.bottomText} */
-/* <div dangerouslySetInnerHTML={props.theHtml} className={"h3"} />  */
-/* <HomeIcon width="30px" /> */

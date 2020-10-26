@@ -19,7 +19,6 @@ import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 import eyesIcon from "../assets/images/eyes.svg"
 import fundingDiagram from "../assets/images/diagram.svg"
 
-
 import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
 
@@ -36,7 +35,6 @@ import volunteerGif from "../assets/images/volunteer.gif"
 import nosePressGif from "../assets/images/nose-press.gif"
 import volunteersGif from "../assets/images/volunteers-rl.gif"
 import howVideoFillerGif from "../assets/images/how-video-filler.gif"
-
 
 // Social
 export const InstaIcon = props => {
@@ -73,9 +71,12 @@ export const TwitterIcon = props => {
   return (
     <img
       src={twitterIcon}
-      alt="Twitter Icon"
+      alt="Lightning Logo"
       className={`${props.class}`}
-      style={{ height: "auto", width: props.width }}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
     />
   )
 }
@@ -237,9 +238,12 @@ export const LightningIcon = props => {
   return (
     <img
       src={lightningIcon}
-      alt="Lightning Icon"
+      alt="Lightning Logo"
       className={`${props.class}`}
-      style={{ height: "auto", width: props.width }}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
     />
   )
 }
@@ -287,7 +291,6 @@ export const EarthGif = props => {
   )
 }
 
-
 export const VolunteerGif = props => {
   return (
     <img
@@ -309,7 +312,6 @@ export const NosePressGif = props => {
     />
   )
 }
-
 
 export const VolunteersGif = props => {
   return (
@@ -354,5 +356,3 @@ export const FundingDiagram = props => {
     />
   )
 }
-
-

@@ -1,37 +1,53 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { EyesIcon, FundingDiagram } from './_icons'
-
+import React from "react"
+import { Container, Row, Col } from "react-bootstrap"
+import { EyesIcon, FundingDiagram } from "./_icons"
 
 const Seriously = () => {
-
-    return (
-        <Container fluid className='pink-bg pink-typo p-4'>
-
-        <Row className=''>
-        <Col xs={6} className=''>
-          <h1>The Funding Model </h1>
-          <EyesIcon width='150px' class='mt-5'/> 
-          <h3 class='mt-5'>
-            Super makers is a public engagment tool for companies  environment responability sponsered by energy companies around the globe 
+  return (
+    <Container fluid className="pink-bg pink-typo ">
+      <Row className="py-5">
+        <Col xs={12} md={6} className="px-6">
+          <h1>Our Vision </h1>
+          <EyesIcon width="150px" class="mt-5" />
+          <h3 class="mt-5">
+            {" "}
+            Our workshops set children at the heart of the process. We regularly
+            run workshops at primary schools, where we teach kids the
+            fundamentals of scientific principles through a series of physical
+            activities. We use design methods in our workshops that we think are
+            relevant to all fields and participant ages. Due to the recent
+            pandemic, we couldn't continue with our physical workshops and had
+            to take some time to think of new ways of running workshops online.
+            We hope that Super Makers will bring together the best of both
+            worlds:
           </h3>
-
-          </Col>
-          <Col xs={6} className=''>
-        <h3>  Travelling through a landscape of consecutive projects kids can learn about different types of renewable energies, build their own energy circuit,  to light up their custom designed lamp and make a renewable energy station to power the lamp. 
-Super Makers is </h3>
-<FundingDiagram />
-<h3>designed to be accessible for anyone who wants to take part, the only thing participants need is an internet connection and a few simple materials like paper and cardboard. We are using VR and computer vision as a tool to get kids engaged with both the  to tangible, and imaginative aspects of making. For instance, kids are able to check the efficiency of a wind turbine with an RPM counter by holding their creations up to the camera.
-
-Super Makers is social and creates opportunities for kids to celebrate their creation and be part of a global effort to change our world. 
-</h3>
-          </Col>
-      
-         
-        </Row>
-              </Container>
-    )
-
+        </Col>
+        <Col xs={12} md={6} className="px-6">
+          <h3>
+            {" "}
+            <span className="h1 bold">
+              Getting kids to learn online by making their own real world
+              inventions today.{" "}
+            </span>
+            <br /> <br />
+            and <br /> <br />
+            <span className="h1 bold">
+              Getting kids excited about the sustainable future of tomorrow.
+            </span>{" "}
+            <br /> <br />
+            Receiving funding to support our development activity will enable us
+            to directly influence home learning and continue to use art and
+            design as a tool for creating exciting workshops. We will use the
+            funding to develop the first set of Super Makers workshops that can
+            be delivered online. The first set of workshops will enable kids to
+            explore renewable energies in their own context, be it at home or at
+            school, inspiring the next generation to build a
+          </h3>
+          {/* <FundingDiagram /> */}
+        </Col>
+      </Row>
+    </Container>
+  )
 }
 
 export default Seriously
