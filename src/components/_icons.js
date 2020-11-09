@@ -5,10 +5,19 @@ import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
 import lightningIcon from "../assets/images/lightning.svg"
 
+// Features
+// import makeFeature from "../assets/images/feature-make.svg"
+// import playFeature from "../assets/images/feature-play.svg"
+// import createFeature from "../assets/images/feature-create.svg"
+// import shareFeature from "../assets/images/feature-share.svg"
+// import testFeature from "../assets/images/feature-test.svg"
+// import learnFeature from "../assets/images/feature-learn.svg"
+
 import windIcon from "../assets/images/wind-line.svg"
 import lineIconsIcon from "../assets/images/icon-line.svg"
 import shareBtn from "../assets/images/share-btn.svg"
 import phoneMillIcon from "../assets/images/phone-mill.svg"
+import iPhoneCoverIcon from "../assets/images/iphone-cover.svg"
 
 import homeIcon from "../assets/images/home.svg"
 import pushNoseIcon from "../assets/images/push-nose.svg"
@@ -35,12 +44,18 @@ import shareIcon from "../assets/images/share-icon.svg"
 // GIfs
 import swipeGif from "../assets/images/screen-gif.gif"
 import earthGif from "../assets/images/earth.gif"
-import volunteerGif from "../assets/images/volunteer.gif"
 import nosePressGif from "../assets/images/nose-press.gif"
 import volunteersGif from "../assets/images/volunteers-rl.gif"
+import volunteersLedGif from "../assets/images/volanteers-led.gif"
+
+import volunteerGif from "../assets/images/volanteer.gif"
+import volunteerBtnGif from "../assets/images/volanteer-btn.svg"
+
 import howVideoFillerGif from "../assets/images/how-video-filler.gif"
 import vrAnimGif from "../assets/images/vr-anim.gif"
 import phoneRpmGif from "../assets/images/vr-phone-2.gif"
+import getInTouchIcon from "../assets/images/get-in-touch.svg"
+
 
 // Social
 export const InstaIcon = props => {
@@ -317,22 +332,44 @@ export const PhoneMillIcon = props => {
     />
   )
 }
+
+// RPM GIF
 export const PhoneRpmGif = props => {
   return (
     <img
       src={phoneRpmGif}
-      alt="Lightning Icon"
+      alt="RPM Gif"
       className={`${props.class}`}
       style={{
-        height: "auto",
+        position: "absolute",
         maxHeight: "50%",
         maxWidth: "50%",
-        position: "absolute",
         top: 0,
         bottom: 0,
         left: 0,
         right: 0,
         margin: "auto",
+      }}
+    />
+  )
+}
+// RPM SVG TOp
+export const IPhoneCoverIcon = props => {
+  return (
+    <img
+      src={iPhoneCoverIcon}
+      alt="RPM Gif"
+      className={`${props.class}`}
+      style={{
+        position: "absolute",
+        maxHeight: "50%",
+        maxWidth: "50%",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        margin: "auto",
+        zIndex: 2,
       }}
     />
   )
@@ -359,6 +396,52 @@ export const VolunteerGif = props => {
     />
   )
 }
+
+export const VolunteerBtnGif = props => {
+  return (
+    <img
+      src={volunteerBtnGif}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const VolunteersLedGif = props => {
+  return (
+    <img
+      src={volunteersLedGif}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{ 
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const GetInTouchIcon = props => {
+  return (
+    <img
+      src={getInTouchIcon}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{ 
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+
 export const VrAnimGif = props => {
   return (
     <img
@@ -424,3 +507,85 @@ export const FundingDiagram = props => {
     />
   )
 }
+
+// Features
+// export const MakeFeature = props => {
+//   return (
+//     <img
+//       src={makeFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }
+
+// export const LearnFeature = props => {
+//   return (
+//     <img
+//       src={learnFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }
+// export const TestFeature = props => {
+//   return (
+//     <img
+//       src={testFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }
+// export const ShareFeature = props => {
+//   return (
+//     <img
+//       src={shareFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }
+// export const CreateFeature = props => {
+//   return (
+//     <img
+//       src={createFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }
+
+// export const PlayFeature = props => {
+//   return (
+//     <img
+//       src={playFeature}
+//       alt="Lightning Logo"
+//       className={`${props.class}`}
+//       style={{
+//         height: props.height ? props.height : "auto",
+//         width: props.width,
+//       }}
+//     />
+//   )
+// }

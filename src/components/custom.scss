@@ -223,31 +223,37 @@ body {
   color: inherit !important;
 }
 //  VIDEO
-// .video-react {
-//   background-color: transparent !important;
-//   max-height: auto !important;
-//   width: 100% !important;
-//   font-family: $font-family-sans-serif;
-// }
-// .video-react .video-react-poster {
-//   background-color: transparent !important;
-// }
-// .video-react-control-bar .video-react-control-bar-auto-hide {
-//   transition: visibility 0.1s, opacity 0.1s !important;
-// }
 
 video:focus {
   outline-width: 0 !important;
 }
 video::-webkit-media-controls-panel {
   -webkit-appearance: none;
-  // opacity: 0.5 !important;
-  // background-color: red !important;
 }
 
 video::-webkit-media-controls-play-button {
   // background-color: $blue !important;
 }
+
+#backround-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  object-fit: cover;
+}
+#volunteer-video {
+  width: 100%;
+  height: auto;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  // z-index: 0;
+  // object-fit: cover;
+}
+
 // Loading
 .img-placeholder-x {
   background-image: $img-placeholder-x;
@@ -260,11 +266,11 @@ video::-webkit-media-controls-play-button {
 
 // image-backround
 
-.cross-backround {
-  background: url("../assets/images/vr-real.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .cross-backround {
+//   background: url("../assets/images/vr-real.gif");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 // ***  Color Backrounds *** //
 .green-bg {

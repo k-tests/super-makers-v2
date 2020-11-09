@@ -5,25 +5,48 @@ import {
   PushNoseIcon,
   VolunteersGif,
   VolunteerGif,
+  VolunteerBtnGif,
+  VolunteersLedGif,
+  GetInTouchIcon
 } from "./_icons"
+import volunteerVid from "../assets/images/volanteers-rl-2.mp4"
+
 
 const Volunteer = () => {
   return (
-    <Container fluid className="dark-blue-bg dark-blue-typo p-4">
+    <Container fluid className="dark-blue-bg dark-blue-typo">
       <Row className="">
-        <Col xs={4} className="p-6">
-          <h1>Test it Out!</h1>
-          <NosePressGif width="300px" />
-        </Col>
-        <Col xs={4} className="p-6">
-          <h3>Would you like to be an early tester?</h3>
-          <br />
-          <VolunteerGif width="250px" />
-        </Col>
-        <Col xs={4} className="p-6">
-          <h3>Get in touch!</h3>
-          <br />
-          <VolunteersGif width="300px" />
+        <Col className="p-6">
+          <h1 className="mb-5 ">Test it Out!</h1>
+          <Row>
+            <Col xs={12} md={6} className='mb-3'>
+              <video
+            autoplay="autoplay"
+            muted
+            loop="true"
+            controlsList="nodownload"
+            id="volunteer-video"
+          >
+            <source src={volunteerVid} type="video/mp4" />
+          </video>
+            </Col>
+            <Col xs={12} md={6} className='text-center'>
+            <GetInTouchIcon width="200px"/>
+            <h3 className="mt-5">Would you like to be an early tester?</h3>
+
+              {/* <VolunteersLedGif maxWidth='40%' /> */}
+            </Col>
+          </Row>
+
+          {/* <Row>
+            <Col xs={12} className='mb-3'>
+              <h3 className="">Would you like to be an early tester?</h3>
+            </Col>
+            <Col xs={12} className='text-center mt-5'>
+            <GetInTouchIcon width="200px"/>
+            </Col>
+          
+          </Row> */}
         </Col>
       </Row>
     </Container>

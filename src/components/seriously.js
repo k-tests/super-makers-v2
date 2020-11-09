@@ -6,10 +6,15 @@ const Seriously = () => {
   return (
     <Container fluid className="pink-bg pink-typo ">
       <Row className="py-5">
-        <Col xs={12} md={6} className="px-6">
+
+        <Col  className="px-6">
+          
           <h1>Our Vision </h1>
           <EyesIcon width="150px" class="mt-5" />
-          <h3 class="mt-5">
+
+<Row className="mt-5">
+<Col >
+<h3 >
             {" "}
             Our workshops set children at the heart of the process. We regularly
             run workshops at primary schools, where we teach kids the
@@ -20,18 +25,20 @@ const Seriously = () => {
             to take some time to think of new ways of running workshops online.
             We hope that Super Makers will bring together the best of both
             worlds:
-          </h3>
-        </Col>
-        <Col xs={12} md={6} className="px-6">
-          <h3>
-            {" "}
-            <span className="h1 bold">
+      <br/>   <br/>
+          <span className="h1">
               Getting kids to learn online by making their own real world
               inventions today.{" "}
             </span>
             <br /> <br />
             and <br /> <br />
-            <span className="h1 bold">
+            </h3>
+</Col>
+<Col>
+<h3>
+         
+          
+            <span className="h1">
               Getting kids excited about the sustainable future of tomorrow.
             </span>{" "}
             <br /> <br />
@@ -43,7 +50,12 @@ const Seriously = () => {
             explore renewable energies in their own context, be it at home or at
             school, inspiring the next generation to build a
           </h3>
-          {/* <FundingDiagram /> */}
+</Col>
+</Row>
+
+       
+
+        
         </Col>
       </Row>
     </Container>

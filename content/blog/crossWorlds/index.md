@@ -3,9 +3,5 @@ title: Cross Worlds
 date: "2015-05-28T22:40:32.169Z"
 description: Cross
 ---
-
-<!-- We cross between virtual and physical worlds. -->
-
-<!-- ![image](./screen-gif.gif#display=block;width=80%;margin-left=auto;margin-right=auto;margin-top=5rem;margin-bottom=5rem) -->
-
-<!-- Super Makers uses augmented reality and computer vision to get kids into Making. For instance, kids are able to check the efficiency of a wind turbine with an RPM counter by holding their cardboard creations up to the camera. -->
+### Super Makers is a series of workshops and games for building sustainable worlds. The first episode is dedicated to renewable energies: Wind, Sun and Water.
+### Travelling through a landscape of consecutive projects kids learn about different types of renewable energies, make their own energy circuit, design a custom lamp and build a renewable energy station to power it.
