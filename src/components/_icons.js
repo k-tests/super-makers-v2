@@ -18,6 +18,7 @@ import lineIconsIcon from "../assets/images/icon-line.svg"
 import shareBtn from "../assets/images/share-btn.svg"
 import phoneMillIcon from "../assets/images/phone-mill.svg"
 import iPhoneCoverIcon from "../assets/images/iphone-cover.svg"
+import windmealDiagram from "../assets/images/windmeals-diagram.svg"
 
 import homeIcon from "../assets/images/home.svg"
 import pushNoseIcon from "../assets/images/push-nose.svg"
@@ -25,8 +26,12 @@ import comingSoonCarIcon from "../assets/images/cs-car.svg"
 import comingSoonHomeIcon from "../assets/images/cs-home.svg"
 import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 
+import missionIcon from "../assets/images/mission.svg"
 import eyesIcon from "../assets/images/eyes.svg"
 import fundingDiagram from "../assets/images/diagram.svg"
+import supportBtn from "../assets/images/support-btn.svg"
+
+import windmealIcon from "../assets/images/windmeals-icon.svg"
 
 import winterIcon from "../assets/images/winter.svg"
 import springIcon from "../assets/images/spring.svg"
@@ -55,7 +60,6 @@ import howVideoFillerGif from "../assets/images/how-video-filler.gif"
 import vrAnimGif from "../assets/images/vr-anim.gif"
 import phoneRpmGif from "../assets/images/vr-phone-2.gif"
 import getInTouchIcon from "../assets/images/get-in-touch.svg"
-
 
 // Social
 export const InstaIcon = props => {
@@ -416,7 +420,7 @@ export const VolunteersLedGif = props => {
       src={volunteersLedGif}
       alt="Lightning Logo"
       className={`${props.class}`}
-      style={{ 
+      style={{
         maxWidth: props.maxWidth,
         maxHeight: props.maxHeight,
         height: props.height ? props.height : "auto",
@@ -431,7 +435,7 @@ export const GetInTouchIcon = props => {
       src={getInTouchIcon}
       alt="Lightning Logo"
       className={`${props.class}`}
-      style={{ 
+      style={{
         maxWidth: props.maxWidth,
         maxHeight: props.maxHeight,
         height: props.height ? props.height : "auto",
@@ -440,7 +444,6 @@ export const GetInTouchIcon = props => {
     />
   )
 }
-
 
 export const VrAnimGif = props => {
   return (
@@ -492,7 +495,64 @@ export const EyesIcon = props => {
       src={eyesIcon}
       alt="Lightning Icon"
       className={`${props.class}`}
-      style={{ height: "auto", width: props.width }}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const MissionIcon = props => {
+  return (
+    <img
+      src={missionIcon}
+      alt="Mission Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const WindmealIcon = props => {
+  return (
+    <img
+      src={windmealIcon}
+      alt="Mission Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const WindmealDiagram = props => {
+  return (
+    <img
+      src={windmealDiagram}
+      alt="Mission Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const SupportBtn = props => {
+  return (
+    <img
+      src={supportBtn}
+      alt="Mission Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
     />
   )
 }

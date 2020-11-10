@@ -6,7 +6,7 @@ const Features = props => {
     <Container fluid className="pink-bg pink-typo py-3 worlds">
       <Row className="">
         {props.features.map(features => (
-          <FeaturesItem title={features.frontmatter.title}>
+          <FeaturesItem key={features.frontmatter.title}   title={features.frontmatter.title}>
             <div dangerouslySetInnerHTML={{ __html: features.html }} />
           </FeaturesItem>
         ))}

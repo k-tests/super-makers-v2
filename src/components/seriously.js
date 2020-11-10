@@ -1,21 +1,25 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { EyesIcon, FundingDiagram } from "./_icons"
+import {
+  EyesIcon,
+  MissionIcon,
+  LightningIcon,
+  ShareBtn,
+  SupportBtn,
+} from "./_icons"
 
 const Seriously = () => {
   return (
     <Container fluid className="pink-bg pink-typo ">
       <Row className="py-5">
-
-        <Col  className="px-6">
-          
+        <Col xs={12} md={6} className="px-6">
           <h1>Our Vision </h1>
-          <EyesIcon width="150px" class="mt-5" />
-
-<Row className="mt-5">
-<Col >
-<h3 >
-            {" "}
+          <EyesIcon height="70px" class="mt-5 mb-5" />
+          <h3 className="mt-5 ">
+            <span className=" bold h1">
+              Getting kids excited about the sustainable future of tomorrow.
+            </span>
+            <br /> <br />
             Our workshops set children at the heart of the process. We regularly
             run workshops at primary schools, where we teach kids the
             fundamentals of scientific principles through a series of physical
@@ -25,22 +29,27 @@ const Seriously = () => {
             to take some time to think of new ways of running workshops online.
             We hope that Super Makers will bring together the best of both
             worlds:
-      <br/>   <br/>
-          <span className="h1">
+            {/* <br /> <br />
+            <span className=" bold">
               Getting kids to learn online by making their own real world
-              inventions today.{" "}
+              inventions today.
             </span>
             <br /> <br />
             and <br /> <br />
-            </h3>
-</Col>
-<Col>
-<h3>
-         
-          
-            <span className="h1">
+            <span className=" bold">
               Getting kids excited about the sustainable future of tomorrow.
             </span>{" "}
+            <br /> <br /> */}
+          </h3>
+        </Col>
+        <Col xs={12} md={6} className="px-6">
+          <h1>Our Mission </h1>
+          <MissionIcon height="70px" class="mt-5 mb-5" />
+          <h3 className="mt-5 ">
+            <span className=" bold h1 ">
+              Getting kids to learn online by making their own real world
+              inventions today.{" "}
+            </span>
             <br /> <br />
             Receiving funding to support our development activity will enable us
             to directly influence home learning and continue to use art and
@@ -48,14 +57,14 @@ const Seriously = () => {
             funding to develop the first set of Super Makers workshops that can
             be delivered online. The first set of workshops will enable kids to
             explore renewable energies in their own context, be it at home or at
-            school, inspiring the next generation to build a
+            school, inspiring the next generation to build a sustainable future.
           </h3>
-</Col>
-</Row>
-
-       
-
-        
+        </Col>
+      </Row>
+      <Row className="py-5">
+        <Col xs={12} className="px-6">
+          <h3 className="mr-5 text-nowrap">Become an Industry Partner:</h3>
+          <SupportBtn width="180px" class="mt-5" />
         </Col>
       </Row>
     </Container>

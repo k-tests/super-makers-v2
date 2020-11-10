@@ -51,8 +51,8 @@ module.exports = {
                 `display`,
                 `margin-top`,
                 `margin-bottom`,
-                `height`
-              ],
+                `height`,
+                `max-height`,              ],
             },
           },
           {

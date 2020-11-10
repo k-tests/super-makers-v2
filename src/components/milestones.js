@@ -5,7 +5,7 @@ import { SpringIcon, SummerIcon, WinterIcon } from "./_icons"
 
 const Milestones = () => {
   return (
-    <Container fluid className="yellow-bg yellow-typo">
+    <Container fluid className="pink-bg pink-typo">
       <Row className="">
         <Col xs={12} className="p-6">
           <h1>
@@ -35,7 +35,7 @@ const Milestones = () => {
               <h6>About the Alpha release </h6>
             </Col>
             <Col>
-              <Line offset={"15px"} width={"20%"} color="#FF6D00" />
+              <Line offset={"15px"} width={"20%"} color="#ffdc20" />
             </Col>
           </Row>
           <Row>

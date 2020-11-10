@@ -1,18 +1,18 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import windmealRl from "../assets/images/windmeals-rl.jpg"
-
+import windmealRl from "../assets/images/education-rl.jpg"
 import windmealNetwork from "../assets/images/windmeals-diagram.jpg"
 import windmealNetworkVid from "../assets/images/windmeals-diagram.mp4"
+import educationPng from "../assets/images/education-screen.png"
 
 import { WindmealIcon, WindmealDiagram } from "./_icons"
 
-const Investors = () => {
+const Education = () => {
   return (
-    <Container fluid className="green-bg green-typo">
+    <Container fluid className="yellow-bg yellow-typo">
       <Row className="py-5">
         <Col xs={12} className="px-6 mb-5">
-          <h1>Industry Partnership</h1>
+          <h1>Education Partnership</h1>
         </Col>
         <Row className="px-6">
           <Col xs={6} className="">
@@ -20,17 +20,8 @@ const Investors = () => {
           </Col>
           <Col xs={6} className="text-center">
             {/* <WindmealDiagram width="100%" /> */}
-            {/* <img src={windmealNetwork} width="100%" /> */}
-            <video
-              autoplay="autoplay"
-              muted
-              loop="true"
-              controlsList="nodownload"
-              id="volunteer-video"
-            >
-              <source src={windmealNetworkVid} type="video/mp4" />
-            </video>
-
+            <img src={educationPng} width="100%" />
+         
             {/* <img src={windmealRl} width="100%" /> */}
           </Col>
         </Row>
@@ -52,4 +43,4 @@ const Investors = () => {
   )
 }
 
-export default Investors
+export default Education

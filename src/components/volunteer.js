@@ -30,23 +30,15 @@ const Volunteer = () => {
             <source src={volunteerVid} type="video/mp4" />
           </video>
             </Col>
-            <Col xs={12} md={6} className='text-center'>
-            <GetInTouchIcon width="200px"/>
+
+            <Col xs={12} md={6} className='d-flex justify-content-center align-items-center flex-column text-center'>
+
+          <GetInTouchIcon width="200px"/>
             <h3 className="mt-5">Would you like to be an early tester?</h3>
 
-              {/* <VolunteersLedGif maxWidth='40%' /> */}
             </Col>
           </Row>
 
-          {/* <Row>
-            <Col xs={12} className='mb-3'>
-              <h3 className="">Would you like to be an early tester?</h3>
-            </Col>
-            <Col xs={12} className='text-center mt-5'>
-            <GetInTouchIcon width="200px"/>
-            </Col>
-          
-          </Row> */}
         </Col>
       </Row>
     </Container>

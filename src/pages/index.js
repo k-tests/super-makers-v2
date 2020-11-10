@@ -13,6 +13,7 @@ import Endorsement from "../components/endorsement"
 import IntroVideo from "../components/introVideo"
 import AppScreens from "../components/appScreens"
 import Investors from "../components/investors"
+import Education from "../components/education"
 
 
 import TopNavFiller from "../components/_topNavFiller"
@@ -24,6 +25,8 @@ const BlogIndex = ({ data, location }) => {
   const buildWorld = data.buildWorld.nodes
   const crossWorld = data.crossWorld.nodes
   const features = data.features.nodes
+  const endorsement = data.endorsement.nodes
+
   return (
     <Layout>
       <section>
@@ -35,12 +38,13 @@ const BlogIndex = ({ data, location }) => {
         <CrossWorlds theHtml={{ __html: crossWorld[0].html }} />
         <Features features={features} />
         <HowItWorks />
-        <AppScreens/>
+        <AppScreens />
         <Volunteer />
         <Seriously />
         <Investors />
+        <Education/>
         <Milestones />
-        <Endorsement />
+        <Endorsement endorsement={endorsement} />
       </section>
     </Layout>
   )
@@ -84,6 +88,25 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+        }
+      }
+    }
+
+    endorsement: allMarkdownRemark(
+      filter: { frontmatter: { description: { regex: "/endorsement/i" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        excerpt
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          role
         }
       }
     }
