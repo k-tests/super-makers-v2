@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 
-import myVid from "../assets/images/opening_14_2-1.mp4"
+import myVid from "../assets/images/opening_17.mp4"
 
-import vidPoster from "../assets/images/games-2.png"
+import vidPoster from "../assets/images/opening-video-poster.gif"
 import { WindIcon, LineIconsIcon } from "./_icons"
 
 const IntroVideo = props => {
@@ -20,9 +20,6 @@ const IntroVideo = props => {
             A series of projects and games dedicated to renewable energies.
             <br />
             <br />
-            {/* <Link to="/" className="orange">
-              Coming soon!
-            </Link> */}
           </h3>
         </Col>
 
@@ -41,6 +38,7 @@ const IntroVideo = props => {
       </Row>
       <Row className="">
         <Col xs={12} className="my-5 px-6">
+          <h6 className="mb-4"> Works anywhere:</h6>
           <LineIconsIcon width="100%" />
         </Col>
       </Row>

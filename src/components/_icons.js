@@ -7,6 +7,11 @@ import lightningIcon from "../assets/images/lightning.svg"
 
 import appleIcon from "../assets/images/apple.svg"
 import googleIcon from "../assets/images/google.svg"
+import chromeIcon from "../assets/images/chrome.svg"
+import firefoxIcon from "../assets/images/firefox.svg"
+import safariIcon from "../assets/images/safari.svg"
+import explorerIcon from "../assets/images/explorer.svg"
+import windowsIcon from "../assets/images/windows.svg"
 
 // Features
 // import makeFeature from "../assets/images/feature-make.svg"
@@ -55,7 +60,7 @@ import shareIcon from "../assets/images/share-icon.svg"
 import swipeGif from "../assets/images/screen-gif.gif"
 import earthGif from "../assets/images/earth.gif"
 import nosePressGif from "../assets/images/nose-press.gif"
-import volunteersGif from "../assets/images/volunteers-rl.gif"
+// import volunteersGif from "../assets/images/volunteers-rl.gif"
 import volunteersLedGif from "../assets/images/volanteers-led.gif"
 
 import volunteerGif from "../assets/images/volanteer.gif"
@@ -482,16 +487,16 @@ export const NosePressGif = props => {
   )
 }
 
-export const VolunteersGif = props => {
-  return (
-    <img
-      src={volunteersGif}
-      alt="Lightning Icon"
-      className={`${props.class}`}
-      style={{ height: "auto", width: props.width }}
-    />
-  )
-}
+// export const VolunteersGif = props => {
+//   return (
+//     <img
+//       src={volunteersGif}
+//       alt="Lightning Icon"
+//       className={`${props.class}`}
+//       style={{ height: "auto", width: props.width }}
+//     />
+//   )
+// }
 
 export const HowVideoFillerGif = props => {
   return (
@@ -522,6 +527,76 @@ export const GoogleIcon = props => {
   return (
     <img
       src={googleIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ChromeIcon = props => {
+  return (
+    <img
+      src={chromeIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const WindowsIcon = props => {
+  return (
+    <img
+      src={windowsIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExplorerIcon = props => {
+  return (
+    <img
+      src={explorerIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const SafariIcon = props => {
+  return (
+    <img
+      src={safariIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const FirefoxIcon = props => {
+  return (
+    <img
+      src={firefoxIcon}
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{

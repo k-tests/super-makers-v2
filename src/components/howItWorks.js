@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import myVid from "../assets/images/opening_14_2-1.mp4"
+import myVid from "../assets/images/opening_17.mp4"
 import howVideoFillerGif from "../assets/images/how-video-filler.gif"
 
 // import vidPoster from "../assets/images/games.png"

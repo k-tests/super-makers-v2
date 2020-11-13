@@ -4,12 +4,16 @@ import {
   NosePressGif,
   PushNoseIcon,
   VolunteersGif,
-  VolunteerGif,
   VolunteerBtnGif,
   VolunteersLedGif,
   GetInTouchIcon,
   AppleIcon,
   GoogleIcon,
+  ExplorerIcon,
+  WindowsIcon,
+  ChromeIcon,
+  SafariIcon,
+  FirefoxIcon,
 } from "./_icons"
 import volunteerVid from "../assets/images/volanteers-rl-2.mp4"
 
@@ -43,8 +47,13 @@ const Volunteer = () => {
           </Row>
           <Row>
             <Col className="mt-3">
-              <AppleIcon width="150px" class="mr-5" />
-              <GoogleIcon width="150px" />
+              <AppleIcon width="30px" class="mr-5" />
+              <GoogleIcon width="30px" class="mr-5" />
+              <ExplorerIcon width="30px" class="mr-5" />
+              <WindowsIcon width="30px" class="mr-5" />
+              <FirefoxIcon width="30px" class="mr-5" />
+              <ChromeIcon width="30px" class="mr-5" />
+              <SafariIcon width="30px" class="mr-5" />
             </Col>
           </Row>
         </Col>
