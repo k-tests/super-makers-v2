@@ -17,7 +17,12 @@ const Seriously = () => {
           <EyesIcon height="70px" class="mt-5 mb-5" />
           <h3 className="mt-5 ">
             <span className=" bold h1">
-              Getting kids excited about the sustainable future of tomorrow.
+              Get kids excited about the sustainable future of tomorrow.
+              <br />
+              <br />
+              Set children at the heart of the process. <br />
+              <br />
+              Empower kids to make their own inventions.
             </span>
             <br /> <br />
             Our workshops set children at the heart of the process. We regularly
@@ -28,18 +33,9 @@ const Seriously = () => {
             pandemic, we couldn't continue with our physical workshops and had
             to take some time to think of new ways of running workshops online.
             We hope that Super Makers will bring together the best of both
-            worlds:
-            {/* <br /> <br />
-            <span className=" bold">
-              Getting kids to learn online by making their own real world
-              inventions today.
-            </span>
-            <br /> <br />
-            and <br /> <br />
-            <span className=" bold">
-              Getting kids excited about the sustainable future of tomorrow.
-            </span>{" "}
-            <br /> <br /> */}
+            worlds: getting kids to learn online by making their own real world
+            inventions today, and getting them excited about the sustainable
+            future of tomorrow.
           </h3>
         </Col>
         <Col xs={12} md={6} className="px-6">
@@ -47,8 +43,13 @@ const Seriously = () => {
           <MissionIcon height="70px" class="mt-5 mb-5" />
           <h3 className="mt-5 ">
             <span className=" bold h1 ">
-              Getting kids to learn online by making their own real world
-              inventions today.{" "}
+              Inspire the next generation to build a sustainable future. <br />
+              <br />
+              Enable kids to explore renewable energies in their own context.{" "}
+              <br />
+              <br />
+              Use art and design as a tool for creating exciting science
+              workshops.
             </span>
             <br /> <br />
             Receiving funding to support our development activity will enable us

@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 
 // import SmSliderButton from "./SmSliderButton"
-import { ShareBtn, TwitterIcon, LightningIcon } from "./_icons"
+import { ShareBtn, TwitterIcon, LightningIcon, ShareBtnYes } from "./_icons"
 
 const IntroSupport = () => {
   return (
@@ -26,7 +26,7 @@ const IntroSupport = () => {
               <h3 className="mr-5 text-nowrap">Become an Industry Partner:</h3>
             </Col>
             <Col xs={12} className="">
-              <ShareBtn width="180px" />
+              <ShareBtnYes width="180px" />
             </Col>
           </Row>
         </Col>

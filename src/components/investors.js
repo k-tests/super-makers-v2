@@ -2,10 +2,9 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import windmealRl from "../assets/images/windmeals-rl.jpg"
 
-import windmealNetwork from "../assets/images/windmeals-diagram.jpg"
 import windmealNetworkVid from "../assets/images/windmeals-diagram.mp4"
 
-import { WindmealIcon, WindmealDiagram } from "./_icons"
+// import { WindmealIcon, WindmealDiagram } from "./_icons"
 
 const Investors = () => {
   return (
@@ -19,8 +18,6 @@ const Investors = () => {
             <img src={windmealRl} width="100%" />
           </Col>
           <Col xs={6} className="text-center">
-            {/* <WindmealDiagram width="100%" /> */}
-            {/* <img src={windmealNetwork} width="100%" /> */}
             <video
               autoplay="autoplay"
               muted
@@ -30,21 +27,20 @@ const Investors = () => {
             >
               <source src={windmealNetworkVid} type="video/mp4" />
             </video>
-
-            {/* <img src={windmealRl} width="100%" /> */}
           </Col>
         </Row>
       </Row>
       <Row className="py-5">
         <Col xs={12} className="px-6">
           <h3>
-            Our workshops set children at the heart of the process. We regularly
-            run workshops at primary schools, where we teach kids the
-       
-            pandemic, we couldn't continue with our physical workshops and had
-            to take some time to think of new ways of running workshops online.
-            We hope that Super Makers will bring together the best of both
-            worlds:
+            We are looking for industry leaders in sustainable energy who are
+            excited about nurturing and supporting local communities, children
+            and schools across the country. With your help we can get the
+            message out and make this project a reality. We are keen to build
+            genuine relationships between industry partners and the future
+            generation. If you are as excited about giving children the
+            opportunity to learn hands-on renewable energy as us please get in
+            touch.
           </h3>
         </Col>
       </Row>

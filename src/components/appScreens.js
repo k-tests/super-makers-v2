@@ -8,12 +8,12 @@ import screen5 from "../assets/images/screen-5.png"
 import screen6 from "../assets/images/screen-6.png"
 
 const screenArr = [
-  { screen: screen1, title: "Guide", caption: "opening screen for the...." },
-  { screen: screen2, title: "Protoyping Board", caption: "opening screen for the...." },
-  { screen: screen3, title: "Sketch and Test", caption: "opening screen for the...." },
-  { screen: screen4, title: "Game levels", caption: "bopening screen for the...." },
-  { screen: screen5, title: "AR making sesion", caption: "baopening screen for the...." },
-  { screen: screen6, title: "Mistakes", caption: "opening screen for the...." },
+  { screen: screen1, title: "Step by Step", caption: "Instructions explain all you need to know for each activity." },
+  { screen: screen2, title: "Prototyping Lab", caption: "An interactive lab where you connect wires and build your electronic circuits." },
+  { screen: screen3, title: "Sketch Board", caption: "Here you can draw your creations and animate them to make them move." },
+  { screen: screen4, title: "Game Menu", caption: "An exciting range of hands-on projects allows you to understand the full picture." },
+  { screen: screen5, title: "AR Workshop", caption: "Hands-on making session where you can use AR to bring your creations alive." },
+  { screen: screen6, title: "Room for Error", caption: "We allow room for mistakes, which lets you understand problems and try again." },
 ]
 
 const AppScreens = () => {

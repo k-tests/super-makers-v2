@@ -32,7 +32,10 @@ const Milestones = () => {
           <Row className="py-5">
             <Col xs={3}>
               <h3>Alpha release:</h3>
-              <h6>About the Alpha release </h6>
+              <h6>
+                We will improve and refine the games and workshops with a small
+                test group of volunteers.
+              </h6>
             </Col>
             <Col>
               <Line offset={"15px"} width={"20%"} color="#ffdc20" />
@@ -41,7 +44,10 @@ const Milestones = () => {
           <Row>
             <Col xs={3}>
               <h3>Beta release:</h3>
-              <h6>About the Beta release </h6>
+              <h6>
+                We will work together with our educational partners to test
+                Super Makers with a wider audience.{" "}
+              </h6>
             </Col>
             <Col>
               <Line offset={"20%"} width={"50%"} color="#182a74" />
@@ -50,7 +56,9 @@ const Milestones = () => {
           <Row className="py-5">
             <Col xs={3}>
               <h3>Public release:</h3>
-              <h6>About the Public release </h6>
+              <h6>
+                Super Makers goes live and gets rolled out to the public.{" "}
+              </h6>
             </Col>
             <Col>
               <Line offset={"50%"} width={"95%"} color="#04BF8A" />

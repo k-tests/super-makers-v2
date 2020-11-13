@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="237" height="57.041" viewBox="0 0 237 57.041"><g transform="translate(-441 -1049)"><g transform="translate(-41 -763)"><g transform="translate(482 1812)"><g transform="translate(0 0)"><rect width="237" height="57.041" rx="28.521" transform="translate(0 0)" fill="#182a74"/><g transform="translate(0 0)"><rect width="162.599" height="57.041" rx="28.521" transform="translate(0 0)" fill="#ff6d00"/></g></g></g></g><text transform="translate(482 1087)" fill="#fff" font-size="27" font-family="Apercu" letter-spacing="0.04em"><tspan x="0" y="0">Share!</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="237" height="57.041" viewBox="0 0 237 57.041">
+  <g id="Group_2096" data-name="Group 2096" transform="translate(-441 -1049)">
+    <g id="Group_1922" data-name="Group 1922" transform="translate(-41 -763)">
+      <g id="Group_1832" data-name="Group 1832" transform="translate(482 1812)">
+        <g id="Group_1830" data-name="Group 1830" transform="translate(0 0)">
+          <rect id="Rectangle_179" data-name="Rectangle 179" width="237" height="57.041" rx="28.521" transform="translate(0 0)" fill="#182a74"/>
+          <g id="Group_634" data-name="Group 634" transform="translate(0 0)">
+            <rect id="Rectangle_155" data-name="Rectangle 155" width="162.599" height="57.041" rx="28.521" transform="translate(0 0)" fill="#ff6d00"/>
+          </g>
+          <text id="Go_" data-name="Go!" transform="translate(58 38)" fill="#fff" font-size="27" font-family="Apercu" letter-spacing="0.04em"><tspan x="0" y="0">Go!</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

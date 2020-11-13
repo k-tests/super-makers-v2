@@ -20,7 +20,7 @@ const CrossWorlds = props => {
           <VrAnimGif width="90%" class="py-5" />
           <h3 className="mt-3 text-left">
             Super Makers uses augmented reality and computer vision to get kids
-            into Making. For instance, kids are able to check the efficiency of
+            into making. For instance, kids are able to check the efficiency of
             a wind turbine with an RPM counter by holding their cardboard
             creations up to the camera.
           </h3>

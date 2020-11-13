@@ -5,6 +5,9 @@ import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
 import lightningIcon from "../assets/images/lightning.svg"
 
+import appleIcon from "../assets/images/apple.svg"
+import googleIcon from "../assets/images/google.svg"
+
 // Features
 // import makeFeature from "../assets/images/feature-make.svg"
 // import playFeature from "../assets/images/feature-play.svg"
@@ -16,6 +19,8 @@ import lightningIcon from "../assets/images/lightning.svg"
 import windIcon from "../assets/images/wind-line.svg"
 import lineIconsIcon from "../assets/images/icon-line.svg"
 import shareBtn from "../assets/images/share-btn.svg"
+import shareBtnYes from "../assets/images/share-btn-yes.svg"
+
 import phoneMillIcon from "../assets/images/phone-mill.svg"
 import iPhoneCoverIcon from "../assets/images/iphone-cover.svg"
 import windmealDiagram from "../assets/images/windmeals-diagram.svg"
@@ -279,6 +284,16 @@ export const ShareBtn = props => {
     />
   )
 }
+export const ShareBtnYes = props => {
+  return (
+    <img
+      src={shareBtnYes}
+      alt="Hello Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
 
 export const ShareIcon = props => {
   return (
@@ -502,6 +517,35 @@ export const EyesIcon = props => {
     />
   )
 }
+
+export const GoogleIcon = props => {
+  return (
+    <img
+      src={googleIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const AppleIcon = props => {
+  return (
+    <img
+      src={appleIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
 export const MissionIcon = props => {
   return (
     <img

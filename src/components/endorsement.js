@@ -7,18 +7,18 @@ const Endorsement = props => {
     <Container fluid className="green-bg green-typo ">
       <Row className="">
         <Col xs={12} className="p-6">
-          <h1>What experts say? </h1>
+          <h1>Don’t take our word for it... </h1>
         </Col>
       </Row>
       <Row>
         {props.endorsement.map(endorsement => (
-          <EndorsementItem key={endorsement.frontmatter.role}
+          <EndorsementItem
+            key={endorsement.frontmatter.role}
             // title={endorsement.frontmatter.title}
             // role={endorsement.frontmatter.role}
             // featuredProfileImage={endorsement.frontmatter.featuredProfileImage}
           >
             <div dangerouslySetInnerHTML={{ __html: endorsement.html }} />
-
           </EndorsementItem>
         ))}
       </Row>

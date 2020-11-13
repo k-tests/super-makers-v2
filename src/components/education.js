@@ -21,7 +21,7 @@ const Education = () => {
           <Col xs={6} className="text-center">
             {/* <WindmealDiagram width="100%" /> */}
             <img src={educationPng} width="100%" />
-         
+
             {/* <img src={windmealRl} width="100%" /> */}
           </Col>
         </Row>
@@ -29,13 +29,12 @@ const Education = () => {
       <Row className="py-5">
         <Col xs={12} className="px-6">
           <h3>
-            Our workshops set children at the heart of the process. We regularly
-            run workshops at primary schools, where we teach kids the
-       
-            pandemic, we couldn't continue with our physical workshops and had
-            to take some time to think of new ways of running workshops online.
-            We hope that Super Makers will bring together the best of both
-            worlds:
+            We are looking for schools, libraries and education programmes
+            across the country to join Super Makers. We are looking for partners
+            with a strong interest in sustainability and are excited about using
+            art and design as a tool to get the message across. You will be
+            helping us test the Super Makers experience and providing valuable
+            feedback in exchange for exciting workshops and learning resources.
           </h3>
         </Col>
       </Row>
