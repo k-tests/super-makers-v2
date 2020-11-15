@@ -7,14 +7,14 @@ import CrossWorlds from "../components/crossWorlds"
 import Features from "../components/features"
 import HowItWorks from "../components/howItWorks"
 import Volunteer from "../components/volunteer"
-import Seriously from "../components/seriously"
 import Milestones from "../components/milestones"
 import Endorsement from "../components/endorsement"
 import IntroVideo from "../components/introVideo"
 import AppScreens from "../components/appScreens"
 import Investors from "../components/investors"
 import Education from "../components/education"
-
+import Vision from "../components/vision"
+import Mission from "../components/mission"
 
 import TopNavFiller from "../components/_topNavFiller"
 import Layout from "../components/layout"
@@ -40,9 +40,10 @@ const BlogIndex = ({ data, location }) => {
         <HowItWorks />
         <AppScreens />
         <Volunteer />
-        <Seriously />
+        <Vision />
+        <Mission />
         <Investors />
-        <Education/>
+        <Education />
         <Milestones />
         <Endorsement endorsement={endorsement} />
       </section>

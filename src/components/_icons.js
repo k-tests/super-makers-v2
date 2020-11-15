@@ -5,6 +5,14 @@ import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
 import lightningIcon from "../assets/images/lightning.svg"
 
+import vision1Icon from "../assets/images/vision-1.svg"
+import vision2Icon from "../assets/images/vision-2.svg"
+import vision3Icon from "../assets/images/vision-3.svg"
+
+import mission1Icon from "../assets/images/mission-1.svg"
+import mission2Icon from "../assets/images/mission-2.svg"
+import mission3Icon from "../assets/images/mission-3.svg"
+
 import appleIcon from "../assets/images/apple.svg"
 import googleIcon from "../assets/images/google.svg"
 import chromeIcon from "../assets/images/chrome.svg"
@@ -497,6 +505,88 @@ export const NosePressGif = props => {
 //     />
 //   )
 // }
+
+export const Vision1Icon = props => {
+  return (
+    <img
+      src={vision1Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const Vision2Icon = props => {
+  return (
+    <img
+      src={vision2Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const Vision3Icon = props => {
+  return (
+    <img
+      src={vision3Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const Mission1Icon = props => {
+  return (
+    <img
+      src={mission1Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const Mission2Icon = props => {
+  return (
+    <img
+      src={mission2Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const Mission3Icon = props => {
+  return (
+    <img
+      src={mission3Icon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
 
 export const HowVideoFillerGif = props => {
   return (
