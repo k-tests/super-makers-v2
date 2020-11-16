@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import {  Navbar } from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 
 const TopNav = () => {
   return (
@@ -12,10 +12,10 @@ const TopNav = () => {
         <Link to="/">Super Makers</Link>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Link to="/" className="mr-3">
+          <Link to="/about" className="mr-5">
             About
           </Link>
-          <Link to="/about">Get in Touch</Link>
+          <Link to="/contact">Get in Touch</Link>
         </Navbar.Collapse>
       </Navbar>
     </nav>

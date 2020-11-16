@@ -102,6 +102,12 @@ $headings-font-weight: $font-weight-light;
 // *** Body *** //
 $body-bg: $white;
 
+// *** Padding *** //
+$row-p6: 4.5rem;
+
+// Grid
+// $grid-gutter-width: 0px !default;
+
 // *** Buttons *** //
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
@@ -123,7 +129,7 @@ h5,
 h6 {
   letter-spacing: $line-letter-base * 2;
   // line-height: $line-height-base * 0.9;
-  line-height: $line-height-base * 0.8;
+  line-height: $line-height-base * 0.9;
 }
 h1 {
   font-weight: 500;
@@ -135,7 +141,7 @@ h4 {
 }
 h3 {
   font-weight: 300 !important;
-  line-height: $line-height-base * 0.9;
+  line-height: $line-height-base * 0.95;
   letter-spacing: $line-letter-base * 2;
 }
 h2 {
@@ -197,15 +203,12 @@ body {
 .px-6 {
   padding: 0rem 4.5rem !important;
 }
-
-.container-fluid {
-  padding-right: 2rem !important;
-  padding-left: 2rem !important;
+// P6
+.row-p6 {
+  padding: $row-p6 !important;
 }
-
-.container {
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
+.volunteer-row-p6 {
+  margin-top: -4.5rem !important;
 }
 
 .make-green button,
@@ -271,7 +274,6 @@ video::-webkit-media-controls-play-button {
   // z-index: 0;
   // object-fit: cover;
 }
-
 // Loading
 .img-placeholder-x {
   background-image: $img-placeholder-x;
@@ -281,14 +283,6 @@ video::-webkit-media-controls-play-button {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-// image-backround
-
-// .cross-backround {
-//   background: url("../assets/images/vr-real.gif");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
 
 // ***  Color Backrounds *** //
 .green-bg {
@@ -705,27 +699,70 @@ button:focus {
   margin-bottom: 0rem !important;
 }
 
-// *** MEDIA QUERIES *** //
+// ********************************* MEDIA QUERIES *************************** //
 
 // --- Extra small devices (portrait phones, less than 576px) --- //
 @media (max-width: 575.98px) {
   .support-btn {
     margin-bottom: 3rem !important;
   }
-  .support h3 {
-    font-size: $h4-font-size !important;
+  .support h3,
+  h3,
+  .worlds h3,
+  .volunteer h3 {
+    font-size: $h5-font-size !important;
   }
+
   h1 {
-    font-size: $h1-font-size * 0.8 !important;
+    font-size: $h1-font-size * 0.7 !important;
+  }
+  .video-back {
+    min-height: 100vw;
+  }
+
+  // PADDING
+  .row-p6 {
+    padding: $row-p6/2 0 !important;
+  }
+  // ---- ///
+  .mt-sizes-5 {
+    margin-top: 3rem !important;
+  }
+  .mt-sizes-3 {
+    margin-top: 1.5rem !important;
+  }
+  .mt-sizes-6 {
+    margin-top: 4rem !important;
   }
 }
 // --- Small devices (landscape phones, 576px and up) --- //
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .volunteer h3 {
+    font-size: $h4-font-size !important;
+  }
   .support-btn {
     margin-bottom: 3rem !important;
   }
   .support h3 {
     font-size: $h4-font-size !important;
+  }
+  .video-back {
+    min-height: 100vw;
+  }
+
+  // PADDING
+  .row-p6 {
+    padding: $row-p6/1.5 $row-p6 / 3 !important;
+  }
+  // ---- ///
+  .mt-sizes-5 {
+    margin-top: 3rem !important;
+  }
+  .mt-sizes-3 {
+    margin-top: 1.5rem !important;
+  }
+  .mt-sizes-6 {
+    margin-top: 4rem !important;
   }
 }
 // --- Medium devices (tablets, 768px and up) --- //
@@ -733,11 +770,26 @@ button:focus {
   .support h3 {
     font-size: $h5-font-size !important;
   }
-  .worlds h1 {
-    font-size: $font-size-base * 3.2 !important;
+  .video-back {
+    min-height: 100vw;
   }
-  .worlds h3 {
-    font-size: $font-size-base * 1.2 !important;
+  .volunteer h3 {
+    font-size: $h4-font-size !important;
+  }
+
+  // PADDING
+  .row-p6 {
+    padding: $row-p6 $row-p6 / 2 !important;
+  }
+  // ---- ///
+  .mt-sizes-5 {
+    margin-top: 3rem !important;
+  }
+  .mt-sizes-3 {
+    margin-top: 1.5rem !important;
+  }
+  .mt-sizes-6 {
+    margin-top: 4rem !important;
   }
 }
 // --- Large devices (desktops, 992px and up) --- //
@@ -754,11 +806,26 @@ button:focus {
   h3 {
     font-size: $font-size-base * 1.5 !important;
   }
+  // PADDING
+  .row-p6 {
+    padding: $row-p6 $row-p6 / 2 !important;
+  }
+  // ---- ///
 }
 // --- Extra large devices (large desktops, 1200px and up) --- //
-@media (min-width: 1200px) and (max-width: 1299.98px) {
+@media (min-width: 1200px) and (max-width: 1499.98px) {
+  // PADDING
+  .row-p6 {
+    padding: $row-p6 $row-p6 / 1.5 !important;
+  }
+  // ---- ///
 }
 
-// --- Super large devices (large desktops, 1200px and up) --- //
-@media (min-width: 1300px) {
+// --- Super large devices (large desktops, 1500px and up) --- //
+@media (min-width: 1500px) {
+  // PADDING
+  .row-p6 {
+    padding: $row-p6 $row-p6 !important;
+  }
+  // ---- ///
 }

@@ -5,6 +5,8 @@ import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
 import lightningIcon from "../assets/images/lightning.svg"
 
+import accordionIcon from "../assets/images/accordion.svg"
+
 import vision1Icon from "../assets/images/vision-1.svg"
 import vision2Icon from "../assets/images/vision-2.svg"
 import vision3Icon from "../assets/images/vision-3.svg"
@@ -38,14 +40,16 @@ import phoneMillIcon from "../assets/images/phone-mill.svg"
 import iPhoneCoverIcon from "../assets/images/iphone-cover.svg"
 import windmealDiagram from "../assets/images/windmeals-diagram.svg"
 
+import getInTouchInvestorsIcon from "../assets/images/get-in-touch-investors.svg"
+
 import homeIcon from "../assets/images/home.svg"
 import pushNoseIcon from "../assets/images/push-nose.svg"
 import comingSoonCarIcon from "../assets/images/cs-car.svg"
 import comingSoonHomeIcon from "../assets/images/cs-home.svg"
 import comingSoonSchoolIcon from "../assets/images/cs-school.svg"
 
-import missionIcon from "../assets/images/mission.svg"
-import eyesIcon from "../assets/images/eyes.svg"
+import missionIcon from "../assets/images/mission-animation.svg"
+import eyesIcon from "../assets/images/eyes-animation.svg"
 import fundingDiagram from "../assets/images/diagram.svg"
 import supportBtn from "../assets/images/support-btn.svg"
 
@@ -59,6 +63,8 @@ import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
 
 import instaIcon from "../assets/images/instagram.svg"
+import instaWhiteIcon from "../assets/images/instagram-white.svg"
+
 import facebookIcon from "../assets/images/facebook.svg"
 import linkedinIcon from "../assets/images/linkedin.svg"
 import twitterIcon from "../assets/images/twitter.svg"
@@ -90,6 +96,18 @@ export const InstaIcon = props => {
     />
   )
 }
+
+export const InstaWhiteIcon = props => {
+  return (
+    <img
+      src={instaWhiteIcon}
+      alt="Instagram Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
 export const LinkedinIcon = props => {
   return (
     <img
@@ -333,6 +351,20 @@ export const LightningIcon = props => {
   )
 }
 
+export const GetInTouchInvestorsIcon = props => {
+  return (
+    <img
+      src={getInTouchInvestorsIcon}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
 export const SwipeGif = props => {
   return (
     <img
@@ -547,6 +579,20 @@ export const Vision3Icon = props => {
   )
 }
 
+export const AccordionIcon = props => {
+  return (
+    <img
+      src={accordionIcon}
+      alt="Lightning Icon"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
 export const Mission1Icon = props => {
   return (
     <img
@@ -620,6 +666,9 @@ export const GoogleIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -634,6 +683,9 @@ export const ChromeIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -648,6 +700,9 @@ export const WindowsIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -662,6 +717,9 @@ export const ExplorerIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -676,6 +734,9 @@ export const SafariIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -690,6 +751,9 @@ export const FirefoxIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
@@ -704,6 +768,9 @@ export const AppleIcon = props => {
       alt="Lightning Icon"
       className={`${props.class}`}
       style={{
+        maxWidth: props.maxWidth,
+        maxHeight: props.maxHeight,
+
         height: props.height ? props.height : "auto",
         width: props.width,
       }}
