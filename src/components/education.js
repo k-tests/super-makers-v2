@@ -5,7 +5,7 @@ import windmealNetwork from "../assets/images/windmeals-diagram.jpg"
 import windmealNetworkVid from "../assets/images/windmeals-diagram.mp4"
 import educationPng from "../assets/images/education-screen.svg"
 
-import { WindmealIcon, WindmealDiagram } from "./_icons"
+import { ShareIcon, FacebookIcon, TwitterIcon, GooglePlay } from "./_icons"
 
 const Education = () => {
   return (
@@ -28,7 +28,59 @@ const Education = () => {
           design as a tool to get the message across. You will be helping us
           test the Super Makers experience and providing valuable feedback in
           exchange for exciting workshops and learning resources.
+          <br />
+          <br />
+          <span class="bold">Our experience with Education:</span>
+          <br />
+          <br />
         </h3>
+        <Row>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">Microsoft Research:</span>
+            </h3>
+            <h5>
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type
+            </h5>
+            <br />
+            <GooglePlay width="140px" class="mr-5" />
+            <span class="mr-5">More...</span>
+          </Col>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">Tech Will save Us:</span>
+            </h3>
+            <h5>
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type
+            </h5>
+            <br />
+            <GooglePlay width="140px" class="mr-5" />
+            <span class="mr-5">More...</span>
+          </Col>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">FixED:</span>
+            </h3>
+            <h5>
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to
+              make a type
+            </h5>
+            <br />
+            <GooglePlay width="140px" class="mr-5" />
+            <span class="mr-5">More...</span>
+          </Col>
+        </Row>
       </Col>
     </Row>
   )

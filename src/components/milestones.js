@@ -15,17 +15,17 @@ const Milestones = () => {
           <Col xs={0} lg={3}></Col>
           <Col xs={4} lg={3}>
             <WinterIcon width="40px" class="mb-3" />
-            <h6>Early 2021</h6>
+            <h5>Early 2021</h5>
           </Col>
           <Col xs={4} lg={3}>
             <SpringIcon width="40px" class="mb-3" />
 
-            <h6>April 2021</h6>
+            <h5>April 2021</h5>
           </Col>
           <Col xs={4} lg={3}>
             <SummerIcon width="40px" class="mb-3" />
 
-            <h6>Summer 2021</h6>
+            <h5>Summer 2021</h5>
           </Col>
         </Row>
 
@@ -36,10 +36,10 @@ const Milestones = () => {
             <h3>
               <span className="bold">Alpha release:</span>{" "}
             </h3>
-            <h6>
+            <h5>
               We will improve and refine the games and workshops with a small
               test group of volunteers.
-            </h6>
+            </h5>
           </Col>
 
           <Col>
@@ -54,10 +54,10 @@ const Milestones = () => {
               {" "}
               <span className="bold">Beta release:</span>
             </h3>
-            <h6>
+            <h5>
               We will work together with our educational partners to test Super
               Makers with a wider audience.{" "}
-            </h6>
+            </h5>
           </Col>
           <Col>
             <Line offset={"20%"} width={"50%"} color="#182a74" />
@@ -71,7 +71,7 @@ const Milestones = () => {
               {" "}
               <span className="bold">Public release:</span>
             </h3>
-            <h6>Super Makers goes live and gets rolled out to the public. </h6>
+            <h5>Super Makers goes live and gets rolled out to the public. </h5>
           </Col>
           <Col>
             <Line offset={"50%"} width={"95%"} color="#04BF8A" />

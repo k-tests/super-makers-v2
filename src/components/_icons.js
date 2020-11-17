@@ -70,6 +70,8 @@ import linkedinIcon from "../assets/images/linkedin.svg"
 import twitterIcon from "../assets/images/twitter.svg"
 import shareIcon from "../assets/images/share-icon.svg"
 
+import googlePlay from "../assets/images/google-play.svg"
+
 // GIfs
 import swipeGif from "../assets/images/screen-gif.gif"
 import earthGif from "../assets/images/earth.gif"
@@ -118,6 +120,17 @@ export const LinkedinIcon = props => {
     />
   )
 }
+export const GooglePlay = props => {
+  return (
+    <img
+      src={googlePlay}
+      alt="Linkedin Icon"
+      className={`${props.class}`}
+      style={{ height: "auto", width: props.width }}
+    />
+  )
+}
+
 export const FacebookIcon = props => {
   return (
     <img

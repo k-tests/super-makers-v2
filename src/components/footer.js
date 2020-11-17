@@ -14,7 +14,7 @@ const Footer = () => {
           <div>© {new Date().getFullYear()}, Super Makers</div>
         </Nav>
         <Nav>
-          <InstaWhiteIcon width="25px" class="ml-5" />
+          <InstaWhiteIcon width="20px" class="ml-5" />
         </Nav>
         {/* <div className="d-flex justify-content-between">
        

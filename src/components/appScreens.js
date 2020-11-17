@@ -1,8 +1,8 @@
 import React from "react"
 import { Container, Row, Col, Accordion } from "react-bootstrap"
-import { AccordionIcon } from "./_icons"
+// import { AccordionIcon } from "./_icons"
 
-import { ContextAwareToggle } from "./accordion"
+// import { ContextAwareToggle } from "./accordion"
 
 import screen1 from "../assets/images/screen-1.png"
 import screen2 from "../assets/images/screen-2.png"
@@ -61,21 +61,8 @@ const AppScreens = () => {
           {screenArr.map(screen => (
             <Col key={screen.title} xs={12} md={6} lg={4} className="mb-5">
               <ScreenShot screenNum={screen.screen} />
-              {/* <h3 className="mt-5">{screen.title}</h3> */}
-
-              {/* More Info (Accordion) */}
-              <Accordion defaultActiveKey="1">
-                <ContextAwareToggle eventKey="0">
-                  <h3 className="mr-3">{screen.title}</h3>
-                  <AccordionIcon width="25px" class="" />
-                </ContextAwareToggle>
-                <Accordion.Collapse eventKey="0">
-                  <h6 className="mt-3">{screen.caption}</h6>
-                </Accordion.Collapse>
-              </Accordion>
-              {/* END (Accordion) */}
-
-              {/* <h6 className="mt-3">{screen.caption}</h6> */}
+              <h3 className="mt-5">{screen.title}</h3>
+              <h5 className="mt-3">{screen.caption}</h5>
             </Col>
           ))}
         </Row>
@@ -90,3 +77,15 @@ export default AppScreens
 const ScreenShot = props => {
   return <img src={props.screenNum} width="100%" className="" />
 }
+
+/* More Info (Accordion) */
+//  <Accordion defaultActiveKey="1">
+//  <ContextAwareToggle eventKey="0">
+//    <h3 className="mr-3">{screen.title}</h3>
+//    <AccordionIcon width="25px" class="" />
+//  </ContextAwareToggle>
+//  <Accordion.Collapse eventKey="0">
+//    <h6 className="mt-3">{screen.caption}</h6>
+//  </Accordion.Collapse>
+// </Accordion>
+/* END (Accordion) */
