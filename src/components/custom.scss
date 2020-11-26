@@ -401,11 +401,33 @@ video::-webkit-media-controls-play-button {
   background-color: $dark-blue;
 }
 
+.slider-button .btn:hover {
+  background-color: $orange;
+}
+
 .btn:focus,
 .btn:active {
   background-color: $red !important;
   box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
   text-decoration: none !important;
+}
+
+.slider-button .btn:focus,
+.slider-button .btn:active {
+  background-color: $orange !important;
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+  text-decoration: none !important;
+}
+
+.slider-button .btn {
+  font-size: 20px;
+  min-width: 120px;
+}
+
+.slider-button {
+  background-color: $dark-blue;
+  width: 180px;
+  border-radius: 100px;
 }
 
 // .btn-link:hover {
