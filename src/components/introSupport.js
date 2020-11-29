@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 // import SmSliderButton from "./SmSliderButton"
 import { ShareBtn, TwitterIcon, LightningIcon, ShareBtnYes } from "./_icons"
+import SmSliderButton from './SmSliderButton';
 
 const IntroSupport = () => {
   return (
@@ -14,7 +15,7 @@ const IntroSupport = () => {
             <h3 className="mr-5 text-nowrap">Share the news!</h3>
           </Col>
           <Col xs={12} className="support-btn">
-            <ShareBtn width="180px" />
+            <SmSliderButton onClick={() => {console.log("GO!")}}>Go!</SmSliderButton>
           </Col>
         </Row>
       </Col>
@@ -25,7 +26,7 @@ const IntroSupport = () => {
             <h3 className="mr-5 text-nowrap">Become an Industry Partner:</h3>
           </Col>
           <Col xs={12} className="">
-            <ShareBtnYes width="180px" />
+            <SmSliderButton onClick={() => {console.log("Yes!")}}>Yes!</SmSliderButton>
           </Col>
         </Row>
       </Col>
