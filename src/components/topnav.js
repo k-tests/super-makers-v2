@@ -9,13 +9,13 @@ const TopNav = () => {
         className="py-3 dark-blue-bg dark-blue-typo fixed-top"
         expand="lg"
       >
-        <Link to="/trailer">Super Makers</Link>
+        <Link to="/">Super Makers</Link>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Link to="/trailer" className="mr-5">
+          <Link to="/about" className="mr-5">
             About
           </Link>
-          <Link to="/trailer">Get in Touch</Link>
+          <Link to="/contact">Get in Touch</Link>
         </Navbar.Collapse>
       </Navbar>
     </nav>

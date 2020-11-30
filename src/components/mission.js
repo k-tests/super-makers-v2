@@ -1,5 +1,8 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
+import SmSliderButton from "./SmSliderButton"
+import { navigate } from "gatsby"
+
 import {
   EyesIcon,
   MissionIcon,
@@ -67,7 +70,18 @@ const Mission = () => {
         <Row className="mt-5">
           <Col xs={12} className="">
             <h4 className="">Become our partner:</h4>
-            <GetInTouchInvestorsIcon width="250px" class="mt-3" />
+            <SmSliderButton
+              class="mt-3"
+              style={{ width: 230 }}
+              onClick={() => {
+                // console.log("GO!")
+                navigate("/contact")
+              }}
+            >
+              Get in touch
+            </SmSliderButton>
+
+            {/* <GetInTouchInvestorsIcon width="250px" class="mt-3" /> */}
           </Col>
         </Row>
       </Col>

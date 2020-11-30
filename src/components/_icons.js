@@ -1,9 +1,13 @@
 import React from "react"
+import { motion } from "framer-motion"
 
 import helloIcon from "../assets/images/hello.svg"
 import crossIcon from "../assets/images/cross-icon.svg"
 import vrIcon from "../assets/images/vr-icon.svg"
 import lightningIcon from "../assets/images/lightning.svg"
+import aboutIcon from "../assets/images/about.svg"
+
+import handLoop from "../assets/images/hand-loop.svg"
 
 import accordionIcon from "../assets/images/accordion.svg"
 
@@ -31,7 +35,9 @@ import windowsIcon from "../assets/images/windows.svg"
 // import testFeature from "../assets/images/feature-test.svg"
 // import learnFeature from "../assets/images/feature-learn.svg"
 
-import windIcon from "../assets/images/wind-line.svg"
+// import windIcon from "../assets/images/wind-line.svg"
+import windIcon from "../assets/images/windIcon.svg"
+
 import lineIconsIcon from "../assets/images/icon-line.svg"
 import shareBtn from "../assets/images/share-btn.svg"
 import shareBtnYes from "../assets/images/share-btn-yes.svg"
@@ -59,11 +65,22 @@ import winterIcon from "../assets/images/winter.svg"
 import springIcon from "../assets/images/spring.svg"
 import summerIcon from "../assets/images/sun.svg"
 
+import experienceBbc from "../assets/images/experience-bbc.svg"
+import experienceFixed from "../assets/images/experience-fixed.svg"
+import experienceOlimpus from "../assets/images/experience-olimpus.svg"
+import experienceRbc from "../assets/images/experience-rbc.svg"
+import experienceTechwillsaveus from "../assets/images/experience-techwillsaveus.svg"
+import experienceQueen from "../assets/images/experience-queen.svg"
+import experienceGoldsmith from "../assets/images/experience-goldsmith.svg"
+import experienceOcad from "../assets/images/experience-ocad.svg"
+
 import buildWorldsRightImg from "../assets/images/build-worlds.png"
 import buildWorldsLefttImg from "../assets/images/cross-worlds.png"
 
 import instaIcon from "../assets/images/instagram.svg"
 import instaWhiteIcon from "../assets/images/instagram-white.svg"
+
+import contactIcon from "../assets/images/contact.svg"
 
 import facebookIcon from "../assets/images/facebook.svg"
 import linkedinIcon from "../assets/images/linkedin.svg"
@@ -364,10 +381,166 @@ export const LightningIcon = props => {
   )
 }
 
+export const ContactIcon = props => {
+  return (
+    <img
+      src={contactIcon}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceBbc = props => {
+  return (
+    <img
+      src={experienceBbc}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const ExperienceFixed = props => {
+  return (
+    <img
+      src={experienceFixed}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const ExperienceTechwillsaveus = props => {
+  return (
+    <img
+      src={experienceTechwillsaveus}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceRbc = props => {
+  return (
+    <img
+      src={experienceRbc}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceOlimpus = props => {
+  return (
+    <img
+      src={experienceOlimpus}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceQueen = props => {
+  return (
+    <img
+      src={experienceQueen}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceGoldsmith = props => {
+  return (
+    <img
+      src={experienceGoldsmith}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const ExperienceOcad = props => {
+  return (
+    <img
+      src={experienceOcad}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+
+export const HandLoop = props => {
+  return (
+    <motion.div
+      animate={{ x: 20 }}
+      transition={{ repeat: Infinity, repeatType: "mirror", duration: 0.5 }}
+    >
+      <img
+        src={handLoop}
+        alt="Lightning Logo"
+        className={`${props.class}`}
+        style={{
+          height: props.height ? props.height : "auto",
+          width: props.width,
+        }}
+      />
+    </motion.div>
+  )
+}
+
 export const GetInTouchInvestorsIcon = props => {
   return (
     <img
       src={getInTouchInvestorsIcon}
+      alt="Lightning Logo"
+      className={`${props.class}`}
+      style={{
+        height: props.height ? props.height : "auto",
+        width: props.width,
+      }}
+    />
+  )
+}
+export const AboutIcon = props => {
+  return (
+    <img
+      src={aboutIcon}
       alt="Lightning Logo"
       className={`${props.class}`}
       style={{

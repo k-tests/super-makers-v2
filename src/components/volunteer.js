@@ -14,8 +14,11 @@ import {
   ChromeIcon,
   SafariIcon,
   FirefoxIcon,
+  HandLoop,
 } from "./_icons"
 import volunteerVid from "../assets/images/volanteers-rl-2.mp4"
+import SmSliderButtonRound from "./SmSliderButtonRound"
+import { navigate } from "gatsby"
 
 const Volunteer = () => {
   return (
@@ -41,7 +44,17 @@ const Volunteer = () => {
             xl={6}
             className="d-flex justify-content-center align-items-center flex-column text-center volunteer mt-sizes-5"
           >
-            <GetInTouchIcon width="200px" />
+            <div className="d-flex align-items-center">
+              <HandLoop width="100px" class="mr-5" />
+              <SmSliderButtonRound
+                onClick={() => {
+                  navigate("/contact")
+                }}
+              >
+                Test!
+              </SmSliderButtonRound>
+            </div>
+
             <h3 className="mt-5">Become an early tester!</h3>
           </Col>
           <Col xs={12} lg={8} xl={6}>

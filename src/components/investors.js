@@ -4,7 +4,12 @@ import windmealRl from "../assets/images/windmeals-rl.jpg"
 
 import windmealNetworkVid from "../assets/images/windmeals-diagram.mp4"
 
-import { ShareIcon, FacebookIcon, TwitterIcon, GooglePlay } from "./_icons"
+import {
+  ExperienceRbc,
+  ExperienceBbc,
+  ExperienceOlimpus,
+  ExperienceQueen,
+} from "./_icons"
 
 const Investors = () => {
   return (
@@ -39,56 +44,57 @@ const Investors = () => {
           hands-on renewable energy as us please get in touch.
           <br />
           <br />
-          <span class="bold">Our experience with Education:</span>
+          <span class="bold">Partners we worked with in the past:</span>
           <br /> <br />
         </h3>
         <Row>
-          <Col xs={4}>
-            <h3>
-              {" "}
-              <span class="bold">Microsoft Research:</span>
-            </h3>
-            <h5>
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to
-              make a type
-            </h5>
-            <br />
-            <GooglePlay width="140px" class="mr-5" />
-            <span class="mr-5">More...</span>
-          </Col>
-          <Col xs={4}>
-            <h3>
-              {" "}
-              <span class="bold">Tech Will save Us:</span>
-            </h3>
-            <h5>
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to
-              make a type
-            </h5>
-            <br />
-            <GooglePlay width="140px" class="mr-5" />
-            <span class="mr-5">More...</span>
-          </Col>
-          <Col xs={4}>
-            <h3>
-              {" "}
-              <span class="bold">FixED:</span>
-            </h3>
-            <h5>
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to
-              make a type
-            </h5>
-            <br />
-            <GooglePlay width="140px" class="mr-5" />
-            <span class="mr-5">More...</span>
+          <Col xs={12} className="d-flex justify-content-between">
+            <ExperienceBbc height="60px" class="mr-5" />
+            <ExperienceOlimpus width="120px" class="mr-5" />
+            <ExperienceRbc height="60px" class="mr-5" />
+            <ExperienceQueen width="120px" class="" />
           </Col>
         </Row>
+
+        {/* <Row>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">BBC micro:bit</span>
+            </h3>
+            <h5 className="mb-5">
+              BBC's learning tool for digital skills and creativity. Million
+              micro:bits were given to UK school children as part of the Make It
+              Digital project.
+            </h5>
+            <br />
+            <ExperienceBbc height="80px" class="mr-5" />
+          </Col>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">Olympus - DIY Camera for Air Lens</span>
+            </h3>
+            <h5 className="mb-5">
+              limited edition of DIY interactive paper cameras for the OLYMPUS
+              AIR lens. Using conductive ink, cardboard templates and an app
+              kids can invent their own way of taking picture.
+            </h5>
+            <br />
+            <ExperienceOlimpus width="160px" class="mr-5" />
+          </Col>
+          <Col xs={4}>
+            <h3>
+              {" "}
+              <span class="bold">Royal Bank of Canada</span>
+            </h3>
+            <h5 className="mb-5">
+              UX/UI for orginazational chnage (*under NDA)
+            </h5>
+            <br />
+            <ExperienceRbc height="80px" class="mr-5" />
+          </Col>
+        </Row> */}
       </Col>
     </Row>
   )

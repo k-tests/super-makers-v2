@@ -397,6 +397,7 @@ video::-webkit-media-controls-play-button {
   font-family: $font-family-sans-serif;
   letter-spacing: $line-letter-base * 2;
 }
+
 .btn:hover {
   background-color: $dark-blue;
 }
@@ -404,7 +405,6 @@ video::-webkit-media-controls-play-button {
 .slider-button .btn:hover {
   background-color: $orange;
 }
-
 .btn:focus,
 .btn:active {
   background-color: $red !important;
@@ -422,10 +422,36 @@ video::-webkit-media-controls-play-button {
 .slider-button .btn {
   font-size: 20px;
   min-width: 120px;
+  font-weight: 300 !important;
 }
-
 .slider-button {
   background-color: $dark-blue;
+  width: 180px;
+  border-radius: 100px;
+}
+
+//  --- round
+.slider-button-round .btn {
+  font-size: 20px;
+  min-width: 100px;
+  height: 100px;
+  font-weight: 300 !important;
+  background-color: $red;
+}
+
+.slider-button-round .btn:focus,
+.slider-button-round .btn:active {
+  background-color: red !important;
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+  text-decoration: none !important;
+}
+.slider-button-round .btn:hover {
+  background-color: $red;
+}
+
+.slider-button-round {
+  text-align: left;
+  background-color: $yellow;
   width: 180px;
   border-radius: 100px;
 }

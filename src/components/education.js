@@ -5,7 +5,12 @@ import windmealNetwork from "../assets/images/windmeals-diagram.jpg"
 import windmealNetworkVid from "../assets/images/windmeals-diagram.mp4"
 import educationPng from "../assets/images/education-screen.svg"
 
-import { ShareIcon, FacebookIcon, TwitterIcon, GooglePlay } from "./_icons"
+import {
+  ExperienceFixed,
+  ExperienceGoldsmith,
+  ExperienceOcad,
+  ExperienceTechwillsaveus,
+} from "./_icons"
 
 const Education = () => {
   return (
@@ -30,11 +35,19 @@ const Education = () => {
           exchange for exciting workshops and learning resources.
           <br />
           <br />
-          <span class="bold">Our experience with Education:</span>
+          <span class="bold">Partners we worked with in the past:</span>
           <br />
           <br />
         </h3>
         <Row>
+          <Col xs={12} className="d-flex justify-content-between">
+            <ExperienceTechwillsaveus height="60px" class="mr-5" />
+            <ExperienceFixed width="120px" class="mr-5" />
+            <ExperienceOcad height="60px" class="mr-5" />
+            <ExperienceGoldsmith width="140px" class="" />
+          </Col>
+        </Row>
+        {/* <Row>
           <Col xs={4}>
             <h3>
               {" "}
@@ -80,7 +93,7 @@ const Education = () => {
             <GooglePlay width="140px" class="mr-5" />
             <span class="mr-5">More...</span>
           </Col>
-        </Row>
+        </Row> */}
       </Col>
     </Row>
   )
