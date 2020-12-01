@@ -10,7 +10,7 @@ const HowItWorks = () => {
     <Row className="yellow-bg yellow-typo row-p6">
       <Col xs={12} sm={12} md={12} lg={4} xl={3} className="text-left mb-5">
         <h1 className="mb-5">How it works?</h1>
-        <h3 className="">Introduction to the super makers web app</h3>
+        <h3 className="">A sneak peek into the super makers web app</h3>
       </Col>
 
       <Col xs={12} sm={12} md={12} lg={8} xl={9} className="">

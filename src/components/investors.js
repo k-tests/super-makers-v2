@@ -49,10 +49,10 @@ const Investors = () => {
         </h3>
         <Row>
           <Col xs={12} className="d-flex justify-content-between">
-            <ExperienceBbc height="60px" class="mr-5" />
-            <ExperienceOlimpus width="120px" class="mr-5" />
-            <ExperienceRbc height="60px" class="mr-5" />
-            <ExperienceQueen width="120px" class="" />
+            <ExperienceBbc class="mr-5 logo-w-3" />
+            <ExperienceOlimpus class="mr-5 logo-w-3" />
+            <ExperienceRbc class="mr-5 logo-w-2" />
+            <ExperienceQueen class="logo-w-3" />
           </Col>
         </Row>
 

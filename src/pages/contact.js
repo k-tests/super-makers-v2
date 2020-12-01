@@ -20,7 +20,7 @@ const Contact = () => {
               <h1>Contact us </h1>{" "}
             </Col>
             <Col xs={12} className="mb-5">
-              <h3>Super at supermakers.org </h3>{" "}
+              <h3>Super at supermakers.org</h3>{" "}
             </Col>
           </Row>
         </Col>

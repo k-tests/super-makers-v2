@@ -747,6 +747,19 @@ button:focus {
   margin-bottom: 0rem !important;
 }
 
+.logo-w-1 {
+  width: 30px;
+}
+.logo-w-2 {
+  width: 60px;
+}
+.logo-w-3 {
+  width: 120px;
+}
+.logo-w-4 {
+  width: 160px;
+}
+
 // ********************************* MEDIA QUERIES *************************** //
 
 // --- Extra small devices (portrait phones, less than 576px) --- //
@@ -782,6 +795,20 @@ button:focus {
   .mt-sizes-6 {
     margin-top: 4rem !important;
   }
+
+  // logos
+  .logo-w-1 {
+    width: 30px !important;
+  }
+  .logo-w-2 {
+    width: 30px !important;
+  }
+  .logo-w-3 {
+    width: 50px !important;
+  }
+  .logo-w-4 {
+    width: 80px !important;
+  }
 }
 // --- Small devices (landscape phones, 576px and up) --- //
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -812,6 +839,20 @@ button:focus {
   .mt-sizes-6 {
     margin-top: 4rem !important;
   }
+
+  // logos
+  .logo-w-1 {
+    width: 30px !important;
+  }
+  .logo-w-2 {
+    width: 40px !important;
+  }
+  .logo-w-3 {
+    width: 50px !important;
+  }
+  .logo-w-4 {
+    width: 80px !important;
+  }
 }
 // --- Medium devices (tablets, 768px and up) --- //
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -838,6 +879,20 @@ button:focus {
   }
   .mt-sizes-6 {
     margin-top: 4rem !important;
+  }
+
+  // logos
+  .logo-w-1 {
+    width: 40px !important;
+  }
+  .logo-w-2 {
+    width: 40px !important;
+  }
+  .logo-w-3 {
+    width: 60px !important;
+  }
+  .logo-w-4 {
+    width: 80px !important;
   }
 }
 // --- Large devices (desktops, 992px and up) --- //

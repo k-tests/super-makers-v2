@@ -41,10 +41,10 @@ const Education = () => {
         </h3>
         <Row>
           <Col xs={12} className="d-flex justify-content-between">
-            <ExperienceTechwillsaveus height="60px" class="mr-5" />
-            <ExperienceFixed width="120px" class="mr-5" />
-            <ExperienceOcad height="60px" class="mr-5" />
-            <ExperienceGoldsmith width="140px" class="" />
+            <ExperienceTechwillsaveus class="mr-5 logo-w-2" />
+            <ExperienceFixed class="mr-5 logo-w-3" />
+            <ExperienceOcad class="mr-5 logo-w-3" />
+            <ExperienceGoldsmith class="logo-w-4" />
           </Col>
         </Row>
         {/* <Row>
