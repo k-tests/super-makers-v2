@@ -46,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
         <Investors />
         <Education />
         <Milestones />
-        <Endorsement endorsement={endorsement} />
+        {/* <Endorsement endorsement={endorsement} /> */}
         <Footer />
       </section>
     </Layout>

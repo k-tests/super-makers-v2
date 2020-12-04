@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { ShareBtn, TwitterIcon, LightningIcon, ShareBtnYes } from "./_icons"
 import SmSliderButton from "./SmSliderButton"
 import { navigate } from "gatsby"
+import { TwitterShareButton } from "react-share"
 
 const IntroSupport = () => {
   return (
@@ -24,6 +25,15 @@ const IntroSupport = () => {
             >
               Go!
             </SmSliderButton>
+            <TwitterShareButton
+              // ref={shareBtn => (this.twitterBtn = shareBtn)}
+              url={"https://super-makers-dev.netlify.app/"}
+              title={
+                "Super Makers - A series of projects and games dedicated to renewable energies"
+              }
+            >
+              asdasd
+            </TwitterShareButton>
           </Col>
         </Row>
       </Col>
