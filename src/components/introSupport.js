@@ -20,7 +20,12 @@ const IntroSupport = () => {
             <SmSliderButton
               onClick={() => {
                 // console.log("GO!")
-                navigate("/contact")
+                window.open(
+                  "http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"
+                )
+                // navigate(
+                //   "http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"
+                // )
               }}
             >
               Go!
