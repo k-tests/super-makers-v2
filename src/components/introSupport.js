@@ -30,7 +30,7 @@ const IntroSupport = () => {
             >
               Go!
             </SmSliderButton>
-            <TwitterShareButton
+            {/* <TwitterShareButton
               // ref={shareBtn => (this.twitterBtn = shareBtn)}
               url={"https://super-makers-dev.netlify.app/"}
               title={
@@ -38,7 +38,7 @@ const IntroSupport = () => {
               }
             >
               asdasd
-            </TwitterShareButton>
+            </TwitterShareButton> */}
           </Col>
         </Row>
       </Col>
