@@ -8,6 +8,7 @@ import {
   IPhoneCoverIcon,
 } from "./_icons"
 import backroundVid from "../assets/images/vr-real.mp4"
+import rpmVid from "../assets/images/RPM.mp4"
 
 const CrossWorlds = props => {
   return (
@@ -45,6 +46,18 @@ const CrossWorlds = props => {
           <source src={backroundVid} type="video/mp4" />
         </video>
         <PhoneRpmGif height="60%" class="mx-auto  d-block" />
+
+        {/* <video
+          autoplay="autoplay"
+          muted
+          loop="true"
+          controlsList="nodownload"
+          id="rpm-video"
+          // class="mx-auto  d-block"
+          style={{ height: "30%", marginTop: "50%", marginBottom: "50%" }}
+        >
+          <source src={rpmVid} type="video/mp4" />
+        </video> */}
         <IPhoneCoverIcon height="60%" class="mx-auto  d-block" />
       </Col>
     </Row>

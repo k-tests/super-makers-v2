@@ -9,6 +9,7 @@ const Footer = () => {
       <Navbar
         className="py-3 dark-blue-bg dark-blue-typo fixed-bottom"
         expand="lg"
+        style={{ maxHeight: "3.5rem" }}
       >
         <Nav className="mr-auto">
           <div>© {new Date().getFullYear()}, Super Makers</div>

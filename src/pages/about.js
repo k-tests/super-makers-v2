@@ -18,10 +18,15 @@ const About = () => {
               <h1>About </h1>{" "}
             </Col>
             <Col xs={12} className="mb-5">
-              <h3>
-                Super Makers is the brainchild of Cindy Strobach and Mike Vanis
-                from Unit Lab and Koby Barhad.{" "}
-              </h3>{" "}
+              <Row>
+                <Col xs={12} lg={8}>
+                  {" "}
+                  <h3>
+                    Super Makers is the brainchild of Cindy Strobach and Mike
+                    Vanis from Unit Lab and Koby Barhad.{" "}
+                  </h3>{" "}
+                </Col>
+              </Row>
             </Col>
             <Col xs={12} xl={4} className="mb-5">
               <h3>

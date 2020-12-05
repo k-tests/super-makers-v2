@@ -17,10 +17,15 @@ const Contact = () => {
 
           <Row>
             <Col xs={12} className="mb-5">
-              <h1>Contact us </h1>{" "}
+              <h1>Contact us:</h1>{" "}
             </Col>
             <Col xs={12} className="mb-5">
-              <h3>Super at supermakers.org</h3>{" "}
+              <a
+                onClick={() => window.open("mailto:hello@supermakers.app")}
+                className="h3 dark-blue make-link"
+              >
+                hello@supermakers.app
+              </a>{" "}
             </Col>
           </Row>
         </Col>
