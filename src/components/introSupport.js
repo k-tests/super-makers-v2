@@ -21,7 +21,7 @@ const IntroSupport = () => {
               onClick={() => {
                 // console.log("GO!")
                 window.open(
-                  "http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"
+                  "http://twitter.com/share?text=Super Makers - A series of projects and games dedicated to renewable energies.&url=https://supermakers.app&hashtags=sustainability,design,making"
                 )
                 // navigate(
                 //   "http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"
