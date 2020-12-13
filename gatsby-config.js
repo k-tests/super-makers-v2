@@ -6,7 +6,7 @@ module.exports = {
       summary: `Series of projects and games`,
     },
     description: `Build Sustinable Worlds`,
-    siteUrl: `https://super-makers-dev.netlify.app`,
+    siteUrl: `https://zen-swirles-14109c.netlify.app/`,
     social: {
       twitter: `kylemathews`,
     },
