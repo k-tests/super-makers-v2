@@ -32,6 +32,8 @@ module.exports = {
     {
       resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
+        partialMatching: true,
+        pagePaths: ['/'],
         password: 'hellosupermakers2020' // delete or `undefined` to disable password protection
       }
     },
