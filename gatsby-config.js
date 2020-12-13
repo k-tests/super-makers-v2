@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
-        password: undefined // delete or `undefined` to disable password protection
+        password: 'hellosupermakers2020' // delete or `undefined` to disable password protection
       }
     },
     {
