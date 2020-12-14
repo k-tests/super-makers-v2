@@ -6,7 +6,7 @@ module.exports = {
       summary: `Series of projects and games`,
     },
     description: `Build Sustinable Worlds`,
-    siteUrl: `https://super-makers-dev.netlify.app`,
+    siteUrl: `https://zen-swirles-14109c.netlify.app/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -28,12 +28,6 @@ module.exports = {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
-    },
-    {
-      resolve: '@mkitio/gatsby-theme-password-protect',
-      options: {
-        password: 'hellosupermakers2020' // delete or `undefined` to disable password protection
-      }
     },
     {
       resolve: `gatsby-transformer-remark`,

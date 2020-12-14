@@ -16,6 +16,7 @@ import Education from "../components/education"
 import Vision from "../components/vision"
 import Mission from "../components/mission"
 import Footer from "../components/footer"
+import PasswordProtect from "../components/PasswordProtect";
 
 import TopNavFiller from "../components/_topNavFiller"
 import Layout from "../components/layout"
@@ -29,27 +30,30 @@ const BlogIndex = ({ data, location }) => {
   const endorsement = data.endorsement.nodes
 
   return (
-    <Layout>
-      <section>
-        <SEO title={`Home | ${siteTitle}`} />
-        <TopNavFiller />
-        <IntroVideo />
-        <IntroSupport />
-        <BuildWorlds theHtml={{ __html: buildWorld[0].html }} />
-        <CrossWorlds theHtml={{ __html: crossWorld[0].html }} />
-        <Features features={features} />
-        <HowItWorks />
-        <AppScreens />
-        <Volunteer />
-        <Vision />
-        <Mission />
-        <Investors />
-        <Education />
-        <Milestones />
-        {/* <Endorsement endorsement={endorsement} /> */}
-        <Footer />
-      </section>
-    </Layout>
+    <React.Fragment>
+      <PasswordProtect/>
+      <Layout>
+        <section>
+          <SEO title={`Home | ${siteTitle}`} />
+          <TopNavFiller />
+          <IntroVideo />
+          <IntroSupport />
+          <BuildWorlds theHtml={{ __html: buildWorld[0].html }} />
+          <CrossWorlds theHtml={{ __html: crossWorld[0].html }} />
+          <Features features={features} />
+          <HowItWorks />
+          <AppScreens />
+          <Volunteer />
+          <Vision />
+          <Mission />
+          <Investors />
+          <Education />
+          <Milestones />
+          {/* <Endorsement endorsement={endorsement} /> */}
+          <Footer />
+        </section>
+      </Layout>
+    </React.Fragment>
   )
 }
 
