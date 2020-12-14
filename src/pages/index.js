@@ -16,7 +16,7 @@ import Education from "../components/education"
 import Vision from "../components/vision"
 import Mission from "../components/mission"
 import Footer from "../components/footer"
-import PasswordProtect from "../components/PasswordProtect";
+import PasswordProtect from "../components/PasswordProtect"
 
 import TopNavFiller from "../components/_topNavFiller"
 import Layout from "../components/layout"
@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <React.Fragment>
-      <PasswordProtect/>
+      <PasswordProtect />
       <Layout>
         <section>
           <SEO title={`Home | ${siteTitle}`} />
