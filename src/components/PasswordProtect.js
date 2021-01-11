@@ -4,6 +4,7 @@
 import React from "react"
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { EyesIcon } from "./_icons"
+import firstImpression from './firstImpression';
 
 const styles = {
   parent: {
@@ -78,8 +79,12 @@ class PasswordProtect extends React.Component {
   }
 
   componentDidMount() {
-    this.targetElement = document.querySelector('#password-wrapper');
-    disableBodyScroll(this.targetElement);
+    if (firstImpression('sm-firstimpression', 14)) {
+      this.targetElement = document.querySelector('#password-wrapper');
+      disableBodyScroll(this.targetElement);
+    } else {
+      this.setState({isShowing: false});
+    }
   }
 
   onSubmit(event) {
