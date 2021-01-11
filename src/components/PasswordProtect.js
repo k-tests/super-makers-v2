@@ -2,7 +2,11 @@
  * Write-only the password as cookie
  */
 import React from "react"
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock"
 import { EyesIcon } from "./_icons"
 import firstImpression from './firstImpression';
 
@@ -64,18 +68,18 @@ const styles = {
   },
 }
 
-
 class PasswordProtect extends React.Component {
-  targetElement = null;
+  targetElement = null
   constructor() {
-    super();
-    this.onSubmit = this.onSubmit.bind(this);
+    super()
+    this.onSubmit = this.onSubmit.bind(this)
 
     this.state = {
       password: "",
       isShowing: true,
       isButtonHovered: false,
-    };
+      isSuccesful: "Enter Password:",
+    }
   }
 
   componentDidMount() {
@@ -88,10 +92,13 @@ class PasswordProtect extends React.Component {
   }
 
   onSubmit(event) {
-    event.preventDefault();
+    event.preventDefault()
     if (this.state.password === "hellosupermakers2020") {
-      this.setState({isShowing: false});
-      enableBodyScroll(this.targetElement);
+      this.setState({ isShowing: false })
+      enableBodyScroll(this.targetElement)
+    } else if (this.state.password !== "hellosupermakers2020") {
+      this.setState({ isShowing: true })
+      this.setState({ isSuccesful: "Try Password Again:" })
     }
   }
 
@@ -104,7 +111,8 @@ class PasswordProtect extends React.Component {
             <EyesIcon height="70px" class="mt-4 mb-5" />
 
             <h4 className="mb-4" style={{ color: "#182a74" }}>
-              Enter Password:
+              {/* Enter Password: */}
+              {this.state.isSuccesful}
             </h4>
 
             <form onSubmit={this.onSubmit} style={{ width: "320px" }}>
@@ -112,7 +120,9 @@ class PasswordProtect extends React.Component {
                 name="password"
                 type="password"
                 value={this.state.password}
-                onChange={event => this.setState({password: event.target.value})}
+                onChange={event =>
+                  this.setState({ password: event.target.value })
+                }
                 style={styles.input}
               />
 
@@ -122,16 +132,16 @@ class PasswordProtect extends React.Component {
                   ...styles.button,
                   ...(this.state.isButtonHovered ? styles.buttonHover : null),
                 }}
-                onMouseEnter={() => this.setState({isButtonHovered: true})}
-                onMouseLeave={() => this.setState({isButtonHovered: false})}
+                onMouseEnter={() => this.setState({ isButtonHovered: true })}
+                onMouseLeave={() => this.setState({ isButtonHovered: false })}
               >
                 Enter
               </button>
             </form>
           </div>
         </div>
-      );
-    } else return null;
+      )
+    } else return null
   }
 }
 
