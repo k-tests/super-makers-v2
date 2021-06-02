@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <React.Fragment>
-      <PasswordProtect />
+      {/* <PasswordProtect /> */}
       <Layout>
         <section>
           <SEO title={`Home | ${siteTitle}`} />

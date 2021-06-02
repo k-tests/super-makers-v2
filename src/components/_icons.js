@@ -309,7 +309,7 @@ export const WinterIcon = props => {
       src={winterIcon}
       alt="Hello Icon"
       className={`${props.class}`}
-      style={{ height: "auto", width: props.width }}
+      style={{ height: props.height, width: props.width }}
     />
   )
 }

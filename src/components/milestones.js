@@ -14,18 +14,24 @@ const Milestones = () => {
         <Row className="my-5">
           <Col xs={0} lg={3}></Col>
           <Col xs={4} lg={3}>
-            <WinterIcon width="40px" class="mb-3" />
-            <h5>Early 2021</h5>
+            <div style={{ height: "60px" }}>
+              <SpringIcon width="40px" class="mb-3" />
+            </div>
+            <h5>October 2021</h5>
           </Col>
           <Col xs={4} lg={3}>
-            <SpringIcon width="40px" class="mb-3" />
-
-            <h5>April 2021</h5>
+            <div style={{ height: "60px" }}>
+              <WinterIcon width="40px" class="mb-3" />
+            </div>
+            <h5>December 2021</h5>
           </Col>
           <Col xs={4} lg={3}>
-            <SummerIcon width="40px" class="mb-3" />
+            <div style={{ height: "60px" }}>
+              <WinterIcon width="40px" class="mb-3" />
 
-            <h5>Summer 2021</h5>
+              {/* <SummerIcon width="40px" class="mb-3" /> */}
+            </div>
+            <h5>Winter 2022</h5>
           </Col>
         </Row>
 
